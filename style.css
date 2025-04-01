@@ -20,7 +20,6 @@ body {
     justify-content: center;
     padding: 5px;
 }
-<<<<<<< HEAD
 
 #icon{
     width: 800px;
@@ -31,20 +30,10 @@ body {
 .cor{
    background-color: rgb(3, 37, 82);
    width: 100px;
-=======
-<<<<<<< HEAD
+}
+
 .entrar{
     display: flex;
     color: aliceblue;
     align-items: center;
-=======
-.senha{
-    display: flex;
-    justify-content: center;
-}
-.esqueceu{
-    display: flex;
-    justify-content: center;
->>>>>>> 2df1922e1cf404b9c55bb9f960d4b51ef9e52894
->>>>>>> 0459926139b4a9abfdf15804fded46b86c383573
 }
