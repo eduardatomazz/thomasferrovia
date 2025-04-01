@@ -8,8 +8,9 @@ function validaLogin(){
     if(!login){
         alert('Por favor, preencha com seu login');
         return;
-    } else if (!senha || senha > 7 ||isNaN(senha)){
+    } else if (!senha || senha.length > 7 ||isNaN(senha)){
         alert('Por favor, insira sua senha');
         return;
     }
+
 }

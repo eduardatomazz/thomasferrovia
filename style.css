@@ -20,8 +20,18 @@ body {
     justify-content: center;
     padding: 5px;
 }
+<<<<<<< HEAD
 .entrar{
     display: flex;
     color: aliceblue;
     align-items: center;
+=======
+.senha{
+    display: flex;
+    justify-content: center;
+}
+.esqueceu{
+    display: flex;
+    justify-content: center;
+>>>>>>> 2df1922e1cf404b9c55bb9f960d4b51ef9e52894
 }
