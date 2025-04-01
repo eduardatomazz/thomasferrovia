@@ -13,3 +13,10 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.cabecalhoimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
