@@ -24,7 +24,12 @@ body {
 }
 
 #icon{
-    width: 70px;
-    height: 70px;
+    width: 800px;
+    height: 9%;
     margin-right: 10px;
+}
+
+.cor{
+   background-color: rgb(3, 37, 82);
+   width: 100px;
 }
