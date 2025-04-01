@@ -14,18 +14,9 @@ body {
     justify-content: center;
 }
 
-<<<<<<< HEAD
 .cabecalhoimg{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
-=======
-.login {
-    color: aliceblue;
-}
-
-.entrar{
-    display: flex;
->>>>>>> 22635b863cd1b27d9017f4000c80c3640e5bfb96
 }
