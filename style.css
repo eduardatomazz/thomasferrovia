@@ -20,3 +20,11 @@ body {
     justify-content: center;
     padding: 5px;
 }
+.senha{
+    display: flex;
+    justify-content: center;
+}
+.esqueceu{
+    display: flex;
+    justify-content: center;
+}
