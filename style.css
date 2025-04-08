@@ -14,7 +14,9 @@ body {
     justify-content: center;
 }
 
-.cabecalhoimg{
+#navbar{
+    background-color: rgb(29, 93, 159);
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
