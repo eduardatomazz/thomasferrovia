@@ -20,19 +20,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5px;
 }
-
-#icon{
-    width: 800px;
-    height: 9%;
-    margin-right: 10px;
-}
-
-.cor{
-   background-color: rgb(3, 37, 82);
-   width: 100px;
-}
-
 .entrar{
     display: flex;
     color: aliceblue;
