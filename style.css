@@ -14,14 +14,7 @@ body {
     justify-content: center;
 }
 
-#navbar{
-    background-color: rgb(29, 93, 159);
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-}
+
 .entrar{
     display: flex;
     color: aliceblue;
@@ -32,4 +25,28 @@ body {
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: blueviolet;
+}
+#navbar{
+    background-color: rgb(29, 93, 159);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon{
+    width: 800px;
+    height: 9%;
+    margin-right: 10px;
+}
+
+.cor{
+   background-color: rgb(3, 37, 82);
+   width: 100px;
+}
+.cabecalhoimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
