@@ -50,3 +50,16 @@ body {
     justify-content: center;
     padding: 5px;
 }
+
+#entrar{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color:rgb(88, 134, 163) ;
+    border-style: solid;
+    border-color: white;
+    margin: 20px;
+}
