@@ -3,26 +3,74 @@
     background-color: rgb(58, 115, 186);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 120%;
-    justify-content: center; 
-    align-items: center; 
-    
-   
- }
- #comfundo {
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#inicio_menu {
+    background-color: #032552;
+}
+
+.menu {
+    list-style: none;
+    float: left;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    font-size: 70px;
+}
+
+#dentro_ul {
+    font-size: 10px;
+}
+
+.menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #023880;
+    display: none;
+
+}
+
+.menu li:hover ul,
+.menu li.over ul {
+    display: block;
+}
+
+.menu li ul li {
+    border: 1px solid#1d5d9f;
+    display: block;
+    width: 150px;
+}
+
+#comfundo {
     background-color: rgb(58, 115, 186);
     background-image: url(img/fundo.png);
     width: 100%;
     height: 100%;
-    background-repeat: no-repeat ;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 0;
     margin: 0;
- }
+}
 
 .logo {
     width: 90%;
-    
+
 }
 
 .center {
@@ -31,19 +79,21 @@
 }
 
 
-.entrar{
+.entrar {
     display: flex;
     color: aliceblue;
     align-items: center;
     text-align: center;
 }
-.esqueceu{
+
+.esqueceu {
     display: flex;
     align-items: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: blueviolet;
 }
-#navbar{
+
+#navbar {
     background-color: rgb(29, 93, 159);
     padding: 5px;
     display: flex;
@@ -52,27 +102,29 @@
     margin-bottom: 150px;
 }
 
-#icon{
+#icon {
     width: 500px;
     height: 9%;
     margin-right: 10px;
 }
 
-.cor{
-   background-color: rgb(3, 37, 82);
-   width: 100px;
+.cor {
+    background-color: rgb(3, 37, 82);
+    width: 100px;
 }
-.cabecalhoimg{
+
+.cabecalhoimg {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
 }
-.botao_inicio{
+
+.botao_inicio {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(10vh - 150px);  
+    height: calc(10vh - 150px);
 }
 
 .azul {
@@ -81,11 +133,12 @@
     justify-content: center;
     align-items: center;
     height: calc(50vh - 150px);
-  }
-  .inf_azul{
+}
+
+.inf_azul {
     background-color: #023880;
-    border-radius: 20px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,16 +153,16 @@
     height: 300px;
     padding: 20px;
 
-  }
-  
-  
+}
+
+
 .esqueceu {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(50vh - 150px);
 }
-  
+
 .senha {
     background-color: #003580;
     padding: 30px;
@@ -122,6 +175,7 @@
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
+
 .botao2 {
     display: inline-block;
     padding: 10px 20px;
@@ -132,51 +186,53 @@
     font-weight: bold;
     transition: background-color 0.3s;
     padding: 10px 20px;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
     border-color: #032552;
     border-style: solid;
     margin: 20px;
     border-radius: 40px;
-    
-  }
-  .botao3{
+
+}
+
+.botao3 {
     display: inline-block;
     padding: 10px 20px;
     background-color: white;
-    color: #1d5d9f;;
+    color: #1d5d9f;
+    ;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     transition: background-color 0.3s;
     padding: 10px 20px;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
     margin: 20px;
     border-radius: 40px;
-    
-  }
-  
+
+}
+
 .senha h2 {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
+}
+
 .senha p {
     font-size: 0.9rem;
     margin-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+
 }
 
-#icone{
+#icone {
     width: 800px;
     height: 9%;
     margin-right: 10px;
 }
 
-#titulosenha{
+#titulosenha {
     background-color: rgb(29, 93, 159);
     padding: 5px;
     display: flex;
@@ -188,8 +244,9 @@
 
 a {
     color: rgb(255, 247, 234);
-   
+
 }
+
 .botao {
     display: inline-block;
     padding: 10px 20px;
@@ -200,27 +257,28 @@ a {
     font-weight: bold;
     transition: background-color 0.3s;
     padding: 10px 20px;
-    justify-content: center; 
-    align-items: center;  
-    
-  }
+    justify-content: center;
+    align-items: center;
+
+}
+
 textarea {
     resize: none;
     width: 230px;
-    height: 30px; 
+    height: 30px;
     background-color: rgba(240, 248, 255, 0);
     border-color: #ffffff;
     border-radius: 10px;
     color: #ffffff;
 }
-input{
+
+input {
     resize: none;
     width: 230px;
-    height: 30px; 
+    height: 30px;
     background-color: rgba(240, 248, 255, 0);
     border-color: #ffffff;
     border-width: 1px;
     border-radius: 10px;
     color: #ffffff;
 }
-
