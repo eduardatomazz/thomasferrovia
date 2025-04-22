@@ -12,5 +12,4 @@ function validaLogin(){
         alert('Por favor, insira sua senha');
         return;
     }
-
 }
