@@ -13,45 +13,6 @@
     background-color: #032552;
 }
 
-.menu {
-    list-style: none;
-    float: left;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 5px 10px;
-    display: block;
-    font-size: 70px;
-    position: relative;
-    float: left;
-
-}
-
-li{
-    font-size: 10px;
-    position: relative;
-    float: left;
-
-}
-
-.menu li ul {
-    position: absolute;
-    top: 25px;
-    left: 0;
-    background-color: #023880;
-    display: none;
-
-}
-
-.menu li.over ul {
-    display: block;
-}
-
-.menu li ul li {
-    border: 1px solid#1d5d9f;
-    display: block;
-    width: 150px;
-}
-
 #comfundo {
     background-color: rgb(58, 115, 186);
     background-image: url(img/fundo.png);
@@ -235,8 +196,6 @@ li{
     align-items: center;
     justify-content: center;
 }
-
-
 
 a {
     color: rgb(255, 247, 234);
