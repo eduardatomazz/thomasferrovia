@@ -5,8 +5,6 @@
     font-size: 120%;
     justify-content: center;
     align-items: center;
-
-
 }
 
 #inicio_menu {
@@ -27,14 +25,12 @@
 
 .logo {
     width: 90%;
-
 }
 
 .center {
     display: flex;
     justify-content: center;
 }
-
 
 .entrar {
     display: flex;
@@ -85,7 +81,6 @@
 }
 
 .azul {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,9 +104,7 @@
     width: 300px;
     height: 300px;
     padding: 20px;
-
 }
-
 
 .esqueceu {
     display: flex;
@@ -149,7 +142,6 @@
     border-style: solid;
     margin: 20px;
     border-radius: 40px;
-
 }
 
 .botao3 {
@@ -157,7 +149,6 @@
     padding: 10px 20px;
     background-color: white;
     color: #1d5d9f;
-    ;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -167,7 +158,6 @@
     align-items: center;
     margin: 20px;
     border-radius: 40px;
-
 }
 
 .senha h2 {
@@ -180,7 +170,6 @@
     font-size: 0.9rem;
     margin-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 #icone {
@@ -199,7 +188,6 @@
 
 a {
     color: rgb(255, 247, 234);
-
 }
 
 .botao {
@@ -214,7 +202,6 @@ a {
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
-
 }
 
 textarea {
@@ -241,6 +228,66 @@ input {
 .menuu{
     font-size:10px;
 }
+m, 
 .branco{
     color: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.menu-lateral {
+  height: 100vh;
+  width: 250px;
+  background-color: #003f8a;
+  position: fixed;
+  top: 0;
+  left: -260px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 20px;
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ffffff33;
+  color: white;
+  cursor: pointer;
+}
+
+.menu-lateral li:hover {
+  background-color: #0050b3;
+}
+
+.fechar-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: darkred;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.abrir-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  background-color: #003f8a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
 }

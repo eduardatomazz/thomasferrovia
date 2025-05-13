@@ -13,3 +13,11 @@ function openLeftMenu() {
   function closeRightMenu() {
     document.getElementById("rightMenu").style.display = "none";
   }
+
+  function abrirMenu() {
+    document.getElementById("menuLateral").style.left = "0";
+  }
+  
+  function fecharMenu() {
+    document.getElementById("menuLateral").style.left = "-260px";
+  }
