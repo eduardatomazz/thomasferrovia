@@ -398,3 +398,15 @@ area{
     flex-direction: column; 
     align-items: center;
 }
+
+
+#columnchart_values {
+    margin-bottom: 40px;
+    width: 400px; 
+    height: 300px;
+}
+
+#piechart{
+    width: 400px; 
+    height: 300px;
+}
