@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório e Análise</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Trens Atrasados',     15],
+          ['Trens Pontuais',    85]
+        ]);
+
+        var options = {
+          title: 'Eficiência Operacional'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body id="semfundorelatorioeanalise">
     <div id="navbar">
@@ -65,7 +88,8 @@
                 chart.draw(view, options);
             }
         </script>
-        <div id="columnchart_values" style="width: 400px; height: 300px;"></div>
+        <div id="columnchart_values"></div>
+        <div id="piechart"></div>
     </div>
 </body>
 </html>
