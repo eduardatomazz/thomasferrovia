@@ -490,19 +490,20 @@ area{
 .tremimagem{
 width: 50px;
 align-items: baseline;
+padding: 2px;
 }
 h2{
     color: aliceblue;
     font-size: 20px;
-    margin-left: 5px;
-    
+    margin-left: 5px
 }
+
 .flex{
     display: flex;
 }
 .verde{
     width: 20px;
-    margin-left: 50px;
+    margin-left: 5px;
 }
 .atencao{
     width: 80px;
