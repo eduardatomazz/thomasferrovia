@@ -21,3 +21,13 @@ function openLeftMenu() {
   function fecharMenu() {
     document.getElementById("menuLateral").style.left = "-260px";
   }
+
+
+//*botao voltar:
+
+function redirecionarlogin() {
+  window.location.href = "../public/inicio.html";
+}
+
+// Chama a função quando um evento (ex: click num botão) ocorre
+document.getElementById("meuBotao").addEventListener("click", redirecionarParalogin);
