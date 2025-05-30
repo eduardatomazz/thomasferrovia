@@ -5,49 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório e Análise</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Trens Atrasados',     15],
+          ['Trens Pontuais',    85]
+        ]);
+
+        var options = {
+          title: 'Eficiência Operacional'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body id="semfundorelatorioeanalise">
     <div id="navbar">
         <img class="logo" src="../img/logo_cabecalho.png" alt="">
     </div>
     <div class="parteLaranja">
-        <h5>RELATÓRIO E <br> ANÁLISE</h5> 
+        <h5>RELATÓRIO E ANÁLISE</h5> 
     </div>
     <div class="graficoBarra">
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
-        google.charts.load("current", {packages:['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-            var data = google.visualization.arrayToDataTable([
-            ["Element", "Density", { role: "style" } ],
-            ["Copper", 8.94, "#b87333"],
-            ["Silver", 10.49, "silver"],
-            ["Gold", 19.30, "gold"],
-            ["Platinum", 21.45, "color: #e5e4e2"]
-            ]);
+            google.charts.load("current", {packages:['corechart']});
+            google.charts.setOnLoadCallback(drawChart);
     
-            var view = new google.visualization.DataView(data);
-            view.setColumns([0, 1,
-                            { calc: "stringify",
-                            sourceColumn: 1,
-                            type: "string",
-                            role: "annotation" },
-                            2]);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Linha", "Consumo", { role: "style" }],
+                    ["Linha A", 1600, "color: #ffe666"],
+                    ["Linha B", 1300, "color: #801010"],
+                    ["Linha C", 1900, "color: #e67e22"]
+                ]);
     
-            var options = {
-            title: "Density of Precious Metals, in g/cm^3",
-            width: 600,
-            height: 400,
-            bar: {groupWidth: "95%"},
-            legend: { position: "none" },
-            };
-            var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-            chart.draw(view, options);
-        }
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation"
+                    },
+                    2
+                ]);
+    
+                var options = {
+                    title: "Consumo de Energia:",
+                    titleTextStyle: {
+                        color: 'white',
+                        fontSize: 16
+                    },
+                    width: 400,
+                    height: 300,
+                    backgroundColor: '#00224D',
+                    bar: { groupWidth: "70%" },
+                    legend: { position: "none" },
+                    hAxis: {
+                        textStyle: { color: 'white' }
+                    },
+                    vAxis: {
+                        textStyle: { color: 'white' },
+                        gridlines: { color: '#ffffff33' },
+                        minValue: 0
+                    }
+                };
+    
+                var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+                chart.draw(view, options);
+            }
         </script>
-  <div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+        <div id="columnchart_values"></div>
+        <div id="piechart"></div>
     </div>
-    
 </body>
 </html>

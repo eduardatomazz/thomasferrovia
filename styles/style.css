@@ -318,9 +318,6 @@ body {
     margin: 0%;
 }
 
-/*rotas*/
-
-
 .rotas {
     width: 100px;
     padding: 0%;
@@ -412,4 +409,22 @@ area{
     justify-content: center;
     align-items: center;
     margin: 0;
+}
+
+.graficoBarra{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+#columnchart_values {
+    margin-bottom: 40px;
+    width: 400px; 
+    height: 300px;
+}
+
+#piechart{
+    width: 400px; 
+    height: 300px;
 }
