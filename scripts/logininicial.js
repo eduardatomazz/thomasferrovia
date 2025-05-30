@@ -1,15 +1,29 @@
-function validaLogin(){
-    const login = document.getElementById('login').value.trim;
-    const senha = document.getElementById('senha').value.trim;
+document.addEventListener("DOMContentLoaded", function () {
+    const formulario = document.getElementById("formLoginFuncionario");
 
-    console.log(login);
-    console.log(senha);
+    formulario.addEventListener("submit", function(e) {
+        e.preventDefault();
 
-    if(!login){
-        alert('Por favor, preencha com seu login');
-        return;
-    } else if (!senha || senha.length > 7 ||isNaN(senha)){
-        alert('Por favor, insira sua senha');
-        return;
-    }
-}
+        let valido = true;
+
+        const usuario = document.getElementById("usuario").value.trim();
+        const senha = document.getElementById("senha").value.trim();
+
+        if (usuario.length < 7)
+        document.getElementById("erroUsuario").textContent = "Usuário invalido"
+        valido = false;
+
+        const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
+
+        if (!senhaRegex.test(senha)) {
+            document.getElementById("erroSenha").textContent = "Senha inválida";
+            valido = false;
+        }
+
+        if (valido) {
+            alert("Formulário enviado com sucesso!");
+            formulario.reset();
+            window.location.href = "../public/inicio.html";
+        }
+    });
+});
