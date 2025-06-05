@@ -584,6 +584,7 @@ h2 {
 
 .flex{
     display: flex;
+    align-items: center
 }
 
 .verde {
