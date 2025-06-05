@@ -1,6 +1,6 @@
 #semfundo {
     color: rgb(58, 115, 186);
-    background-color: rgb(58, 115, 186);
+    background-color:  #457cc4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 120%;
     justify-content: center;
@@ -195,8 +195,7 @@ a {
 .botao {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(2, 56, 128);
-    color: white;
+    background-color: #1d5d9f;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -231,7 +230,7 @@ input {
     font-size: 10px;
 }
 
-m,
+
 .branco {
     color: #ffffff;
 }
@@ -511,17 +510,6 @@ input:checked+.slider:before {
     height: 300px;
 }
 
-#semfundo {
-    color: rgb(58, 115, 186);
-    background-color: rgb(12, 46, 95);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 120%;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    padding: 0%;
-
-}
 
 #navbar {
     background-color: #457cc4;
