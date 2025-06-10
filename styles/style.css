@@ -669,3 +669,106 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #002855;
+  color: white;
+}
+
+header {
+  background-color: #00509d;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: relative;
+}
+
+header button {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+}
+
+#monitoramento {
+  padding: 1em;
+}
+
+.alerta {
+  border-radius: 8px;
+  padding: 1em;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.manutencao {
+  background-color: #a4161a;
+}
+
+.inspecao {
+  background-color: #f48c06;
+}
+
+.hidden {
+  display: none;
+}
+
+#detalhes {
+  background-color: white;
+  color: black;
+  margin: 1em;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+
+
+
+.header {
+    background-color: #00509d;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+  
+  .header button {
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .titulo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+
+
+
+
+
+
+
+
+
+
+

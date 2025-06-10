@@ -10,12 +10,32 @@
 <body>
     <header>
         <div id="navbar">
+            <button id="backBtn"><</button>
             <img id="icon" src="../img/logo_cabecalho.png" alt="">
         </div>
         <div class="cor">
         </div>
-
     </header>
+    <main id="monitoramento">
+        <section class="alerta manutencao" onclick="mostrarDetalhes('manutencao')">
+          <h2>ALERTA PARA MANUTENÇÃO!</h2>  
+         <p>Manutenção no óleo do trem 571</p>
+        </section>
+    
+        <section class="alerta inspecao" onclick="mostrarDetalhes('inspecao1')">
+          <h2>INSPEÇÃO!</h2>  
+          <p>Inspeção no motor do trem 571 
+          <p>Data: 24/05/2025</p>
+        </section>
+    
+        <section class="alerta inspecao" onclick="mostrarDetalhes('inspecao2')">
+          <h2>INSPEÇÃO!</h2> 
+          <p>Inspeção no trilho de trem setor 12</p> 
+          <p>Data: 30/05/2025</p>
+        </section>
+      </main>
+    
+      <div id="detalhes" class="hidden"></div>
 
     <script src="../scripts/script.js"></script>
 </body>
