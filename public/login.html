@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/logininicial.js"></script>
     <title>Document</title>
 </head>
 
@@ -22,17 +23,22 @@
                     <div class="inf_azul">
                         <h3>CONECTE-SE AGORA</h3>
                         <div>
-                            <label for="mensagem">Usuário:</label>
-                            <br>
-                            <textarea id="mensagem" name="mensagem"></textarea>
-                            <br>
-                            <br>
-                            <label for="senha">Senha:</label>
-                            <br>
-                            <input type="password" id="senha" name="senha">
-                        </div>
+                            <form id="paginainicial">
+                                <label for="login">Login:</label>
+                                <input type="text" id="login" name="login" required>
+                                <div class="error" id="erroUsuario"></div>
+                                <br>
+                                <br>
+                                <label for="senha">Senha:</label>
+                                <input type="password" id="senha" name="senha" required>
+                                <div class="error" id="erroSenha"></div>
+                                <br>
+                                <br>
+                                <button type="submit">Entrar</button>
+                                <a href="../public/senha.html">Esqueceu a senha?</a>
+                            </form>
                         <a href="../public/senha.html">Esqueceu a senha?</a>
-                        <a href="../public/inicio.html" class="botao3">ACESSAR</a>
+                    
                     </div>
                 </div>
             </section>
@@ -40,4 +46,3 @@
     </MAIn>
 </body>
 
-</html>
