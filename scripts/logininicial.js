@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let valido = true;
 
-        const usuario = document.getElementById("usuario").value.trim();
+        document.getElementById("erroUsuario").textContent = "";
+        document.getElementById("erroSenha").textContent = "";
+
+        const usuario = document.getElementById("login").value.trim();
         const senha = document.getElementById("senha").value.trim();
 
         if (usuario.length < 7)
@@ -16,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
 
         if (!senhaRegex.test(senha)) {
-            document.getElementById("erroSenha").textContent = "Senha inválida";
+            document.getElementById("erroSenha").textContent = "Senha inválida.Deve ter pelo menos 8 caracteres, sendo eles pelo menos 1 letra maiuscula, 1 numero, 1 simbolo";
             valido = false;
         }
 
