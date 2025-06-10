@@ -1,33 +1,27 @@
 function openLeftMenu() {
-    document.getElementById("leftMenu").style.display = "block";
-  }
-  
-  function closeLeftMenu() {
-    document.getElementById("leftMenu").style.display = "none";
-  }
-  
-  function openRightMenu() {
-    document.getElementById("rightMenu").style.display = "block";
-  }
-  
-  function closeRightMenu() {
-    document.getElementById("rightMenu").style.display = "none";
-  }
-
-  function abrirMenu() {
-    document.getElementById("menuLateral").style.left = "0";
-  }
-  
-  function fecharMenu() {
-    document.getElementById("menuLateral").style.left = "-260px";
-  }
-
-
-//*botao voltar:
-
-function redirecionarlogin() {
-  window.location.href = "../public/inicio.html";
+  document.getElementById("leftMenu").style.display = "block";
 }
 
-// Chama a função quando um evento (ex: click num botão) ocorre
-document.getElementById("meuBotao").addEventListener("click", redirecionarParalogin);
+function closeLeftMenu() {
+  document.getElementById("leftMenu").style.display = "none";
+}
+
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+
+function abrirMenu() {
+  document.getElementById("menuLateral").style.left = "0";
+}
+
+function fecharMenu() {
+  document.getElementById("menuLateral").style.left = "-260px";
+}
+
+document.getElementById("backBtn").addEventListener("click", function () {
+  history.back();
+});
