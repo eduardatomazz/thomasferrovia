@@ -560,12 +560,15 @@ input:checked+.slider:before {
     display: flex;
     margin-left: 17.5px;
     display: flex;
+    flex-wrap: wrap
 }
 
 .tremimagem{
 width: 50px;
 align-items: baseline;
 padding: 2px;
+margin-top: 20px;
+justify-content: flex-start
 }
 
 h2 {
@@ -616,13 +619,6 @@ a {
     text-decoration: none;
 }
 
-.numero {
-    align-items: center;
-    font-size: 20px;
-    margin-left: 190px;
-    color: aliceblue;
-}
-
 .status {
     align-items: center;
     font-size: 20px;
@@ -633,21 +629,25 @@ a {
 p {
     align-items: center;
     font-size: 20px;
-    margin-left: 20px;
     color: aliceblue;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .vermelho {
-    height: 120px;
+    height: 240px;
     padding: 0%;
     background-color: #8d0a0a;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 5px;
     border-radius: 5px;
-    width: 392px;
-    display: flex;
-    margin-left: 17.5px;
+    width: 180px;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .horario {
@@ -658,14 +658,35 @@ p {
 
 .botao5 {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: white;
+    background-color: rgba(255, 211, 128, 0.699);
     color: #1d5d9f;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
     font-weight: bold;
     transition: background-color 0.3s;
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+
+}
+h3{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+}
+.destino{
+    background-color: #d17f21;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 70px;
+    width: 390px;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+.numero{
+    margin-left: 20px;
 }
