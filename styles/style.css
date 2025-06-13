@@ -283,8 +283,7 @@
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
-    border-color: #0e355c;
-    border-style: solid;
+   
     margin: 130px;
 }
 .botao23{
@@ -298,8 +297,7 @@
     padding: 10px 20px;
     justify-content: center;
     align-items: center;
-    border-color: #0e355c;
-    border-style: solid;
+  
     margin: 110px;
 }
 .botao0{
@@ -988,11 +986,8 @@ header button {
     gap: 0.5em;
   }
   
-  .logo {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-  }
+  
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -1047,7 +1042,7 @@ header button {
 }
 
 #detalhes {
-  background-color: white;
+  background-color: rgb(164, 0, 0);
   color: black;
   margin: 1em;
   border-radius: 10px;
@@ -1073,8 +1068,8 @@ header button {
   }
   
   .logo {
-    width: 30px;
-    height: 30px;
+    width: 700px;
+    height: 700px;
     object-fit: contain;
   }
 
