@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const formulario = document.getElementById("formLogin");
 
-    formulario.addEventListener("submit", function(e) {
+    formulario.addEventListener("submit", function (e) {
         e.preventDefault();
 
         let valido = true;
@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("erroUsuario").textContent = "";
         document.getElementById("erroSenha").textContent = "";
 
-        const usuario = document.getElementById("login").value.trim();
+        const usuario = document.getElementById("usuario").value.trim();
         const senha = document.getElementById("senha").value.trim();
 
-        if (usuario.length < 7)
-        document.getElementById("erroUsuario").textContent = "Usuário invalido"
-        valido = false;
-
+        if (usuario.length < 7){
+            document.getElementById("erroUsuario").textContent = "Usuário invalido"
+            valido = false;
+        }
         const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
 
         if (!senhaRegex.test(senha)) {
@@ -24,9 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (valido) {
-            alert("Formulário enviado com sucesso!");
             formulario.reset();
-            window.location.href = "../public/inicio.html";
+            window.location.href = "../public/iniciofuncionario.html";
         }
     });
 });

@@ -391,6 +391,15 @@
 
 a {
     color: rgb(255, 247, 234);
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .botao {
