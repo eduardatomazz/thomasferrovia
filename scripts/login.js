@@ -1,34 +1,31 @@
-const botaoAcessar = document.querySelector('.botao3');
+document.addEventListener("DOMContentLoaded", function () {
+    const formulario = document.getElementById("formLoginAdm");
 
-  botaoAcessar.addEventListener('click', function (e) {
-    const usuario = document.getElementById('usuario').value.trim();
-    const senha = document.getElementById('senha').value.trim();
-    const erroUsuario = document.getElementById('erroUsuario');
-    const erroSenha = document.getElementById('erroSenha');
+    formulario.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    // Limpar mensagens anteriores
-    erroUsuario.textContent = '';
-    erroSenha.textContent = '';
+        let valido = true;
 
-    let valido = true;
+        document.getElementById("erroUsuario").textContent = "";
+        document.getElementById("erroSenha").textContent = "";
 
-    if (usuario === '') {
-      erroUsuario.textContent = 'Preencha o usuário.';
-      valido = false;
-    } else if (usuario.length < 3) {
-      erroUsuario.textContent = 'Usuário deve ter ao menos 3 letras.';
-      valido = false;
-    }
+        const usuario = document.getElementById("usuario").value.trim();
+        const senha = document.getElementById("senha").value.trim();
 
-    if (senha === '') {
-      erroSenha.textContent = 'Preencha a senha.';
-      valido = false;
-    } else if (senha.length < 4) {
-      erroSenha.textContent = 'Senha deve ter ao menos 4 caracteres.';
-      valido = false;
-    }
+        if (usuario.length < 7){
+            document.getElementById("erroUsuario").textContent = "Usuário invalido"
+            valido = false;
+        }
+        const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
 
-    if (!valido) {
-      e.preventDefault(); // Impede o redirecionamento
-    }
-  });
+        if (!senhaRegex.test(senha)) {
+            document.getElementById("erroSenha").textContent = "Senha inválida.Deve ter pelo menos 8 caracteres, sendo eles pelo menos 1 letra maiuscula, 1 numero, 1 simbolo";
+            valido = false;
+        }
+
+        if (valido) {
+            formulario.reset();
+            window.location.href = "../public/inicioadm.html";
+        }
+    });
+});
