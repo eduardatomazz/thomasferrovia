@@ -6,19 +6,22 @@
     <title>Login inicial</title>
     <script src="../scripts/logininicial.js"></script>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/logininicial.js"></script>
    
 </head>
 <body>
-    <form action="" id="paginainicial">
+    <form id="paginainicial">
         <label for="login">Login:</label>
         <input type="text" id="login" name="login" required>
+        <div class="error" id="erroUsuario"></div>
         <br>
         <br>
         <label for="senha">Senha:</label>
-        <input type="text" id="senha" name="senha" required>
+        <input type="password" id="senha" name="senha" required>
+        <div class="error" id="erroSenha"></div>
         <br>
         <br>
-        <button type="button" onclick="validaLogin()">Entrar</button>
+        <button type="submit">Entrar</button>
         <a href="../public/senha.html">Esqueceu a senha?</a>
     </form>
 </body>

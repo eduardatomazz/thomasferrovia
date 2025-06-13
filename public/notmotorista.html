@@ -2,11 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>acaoimediata</title>
+    <title>Notificar o motorista </title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-    
     <header>
         <div id="navbar">
             <button id="backBtn"><</button>
@@ -16,13 +16,21 @@
             <p>ALERTAS E NOTIFICAÇÕES</p>
         </div>
     </header>
+  <div class="container">
     
-                <section>
-                    <a href="../public/eqmanutencao.html" class="botao0">ATIVAR EQUIPE DE MANUTENÇÃO</a>
-                </section>
-                
-                <section>
-                    <a href="../public/notmotorista.html" class="botao0">NOTIFICAR O MOTORISTA</a>
-                </section>
+    <button class="notify-btn">NOTIFICAR O MOTORISTA</button>
+
+   <div class="notificar-section">
+      <label for="mensagem">Escreva aqui a mensagem para o motorista:</label>
+      <input type="text" id="mensagem" placeholder="Digite a mensagem...">
+      <button onclick="enviarMensagem()" class="enviar-btn">ENVIAR</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
+    
