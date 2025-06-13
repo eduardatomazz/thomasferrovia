@@ -366,6 +366,9 @@ area{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
+    margin-top: 15px;
+    margin-inline: 0;
+    margin-left: 120px;
     width: 150px;
     height: 15px;
     margin: 100px;
