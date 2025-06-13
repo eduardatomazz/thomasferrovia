@@ -57,5 +57,5 @@ function mostrarDetalhes(tipo) {
 };
 
 // function voltar() {
-//   document.getElementById('detalhes').classList.add('hidden');
-// }
+  // document.getElementById('detalhes').classList.add('hidden');
+ //}
