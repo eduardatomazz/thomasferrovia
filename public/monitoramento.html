@@ -15,38 +15,33 @@
         </div>
         <div class="cor">
         </div>
-        </header>
-     <main>
-    <h2>MONITORAMENTO</h2>
-
-    <section class="card alerta" onclick="irPara('manutencao.html')">
-      <img src="../img/triangulo.png" alt="Alerta" />
-      <div>
-        <h3>ALERTA PARA MANUTENÇÃO!</h3>
+    </header>
+    <main id="monitoramento">
+        
+        <button class="alerta manutencao" onclick="mostrarDetalhes('manutencao');" target="_blank" type="button">
+        <img src="../img/triangulo.png" alt="iconemonitoramento">
+        <h2>ALERTA PARA MANUTENÇÃO!</h2>  
         <p>Manutenção no óleo do trem 571</p>
-      </div>
-    </section>
-
-    <section class="card inspecao" onclick="irPara('inspecao.html')">
-      <img src="../img/ferramenta.png" alt="Ferramenta" />
-      <div>
-        <h3>INSPEÇÃO!</h3>
+        </button>
+    
+        <button class="alerta inspecao" onclick="mostrarDetalhes('inspecao1');" target="_blank" type="button">
+        <img src="../img/ferramenta.png" alt="iconemonitoramento">
+        <h2>INSPEÇÃO!</h2>  
         <p>Inspeção no motor do trem 571</p>
         <p>Data: 24/05/2025</p>
-      </div>
-    </section>
-
-    <section class="card inspecao">
-      <img src="../img/triangulo.png" alt="Ferramenta" />
-      <div>
-        <h3>INSPEÇÃO!</h3>
-        <p>Inspeção no trilho de trem setor 12</p>
+        </button>
+    
+        <button class="alerta inspecao" onclick="mostrarDetalhes('inspecao2');" target="_blank" type="button">
+        <img src="../img/triangulo.png" alt="iconemonitoramento">
+        <h2>INSPEÇÃO!</h2> 
+        <p>Inspeção no trilho de trem setor 12</p> 
         <p>Data: 30/05/2025</p>
-      </div>
-    </section>
-  </main>
-
+        </button>
+      </main>
+    
+      <div id="detalhes" class="hidden"></div>
 
     <script src="../scripts/script.js"></script>
 </body>
+
 </html>
