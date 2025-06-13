@@ -606,12 +606,12 @@ area{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     text-align: center;
-    margin-top: 15px;
-    margin-inline: 0;
+    margin-top: 50px;
+    margin-inline: 15px;
     margin-left: 120px;
+    margin-right: 100px;
     width: 150px;
     height: 15px;
-    margin: 100px;
     padding: 15px;
 
 }
@@ -629,8 +629,8 @@ area{
     text-align: center;
     width: 350px;
     height: 200px;
-    margin-top: 0;
-    margin-left: 20px;
+    margin-top: 0px;
+    margin-left: 14px;
     padding: 20px;
 
 }
