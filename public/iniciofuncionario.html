@@ -1,72 +1,75 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Funcionario</title>
-    <link rel="stylesheet" href="../styles/style.css">
-    <script src="../scripts/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio Funcionario</title>
+  <link rel="stylesheet" href="../styles/style.css">
+  <script src="../scripts/script.js"></script>
 </head>
+
 <body id="inicio_menu">
-    <header>
-        <div id="navbar">
-        <img id="icon" src="../img/logo_cabecalho.png" alt="">
+  <header>
+    <div id="navbar">
+      <img id="icon" src="../img/logo_cabecalho.png" alt="">
+    </div>
+    <div id="menuLateral" class="menu-lateral">
+      <button class="fechar-btn" onclick="fecharMenu()">X</button>
+      <ul>
+        <li><a href="../public/iniciofuncionario.html">INÍCIO</a></li>
+        <li><a href="../public/dashboard.html">DASHBOARD</a></li>
+        <li><a href="../public/rotas.html">ROTAS</a></li>
+        <li><a href="../public/monitoramento.html">MONITORAMENTO</a></li>
+        <li><a href="../public/alertaenotificacoes.html">ALERTAS E NOTIFICAÇÕES</a></li>
+        <li><a href="../index.html">SAIR</a></li>
+      </ul>
+    </div>
+    <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()">☰</button>
+
+    <div class="containerr">
+      <div class="sectionn green-sectionn">
+        <div class="sectionn-header">
+          <i class="fas fa-train"></i> PRÓXIMO TREM
         </div>
-        <div id="menuLateral" class="menu-lateral">
-            <button class="fechar-btn" onclick="fecharMenu()">X</button>
-            <ul>
-              <li><a href="../public/iniciofuncionario.html">INÍCIO</a></li>
-              <li><a href="../public/dashboard.html">DASHBOARD</a></li>
-              <li><a href="../public/rotas.html">ROTAS</a></li>
-              <li><a href="../public/monitoramento.html">MONITORAMENTO</a></li>
-              <li><a href="../public/alertaenotificacoes.html">ALERTAS E NOTIFICAÇÕES</a></li>
-              <li><a href="../index.html">SAIR</a></li>
-            </ul>
-          </div>
-          <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()">☰</button>
-         
-  <div class="containerr">
-    <div class="sectionn green-sectionn">
-      <div class="sectionn-header">
-        <i class="fas fa-train"></i> PRÓXIMO TREM
+        <div class="train-info">
+          <p class="pp">O próximo trem chegará em:</pp>
+          <h1 class="h11">7 <span>minutos</span></h11>
+            <div class="train-details">
+              <p>Número do trem: <strong>5432</strong></p>
+              <p>Despacho em: <strong>Blumenau</strong></p>
+            </div>
+            <div class="dots green-dots">
+              <span></span><span></span><span></span>
+            </div>
+        </div>
       </div>
-      <div class="train-info">
-        <p class="pp">O próximo trem chegará em:</pp>
-        <h1 class="h11">7 <span>minutos</span></h11>
-        <div class="train-details">
-          <p>Número do trem: <strong>5432</strong></p>
-          <p>Despacho em: <strong>Blumenau</strong></p>
+
+
+      <div class="sectionn orange-sectionn">
+        <div class="notice-header">
+          <i class="fas fa-thumbtack"></i> AVISO: 25/03 - 11h35
         </div>
-        <div class="dots green-dots">
+        <hr />
+        <h3>MANUTENÇÃO NO ÓLEO DO TREM 571</h3>
+        <ul>
+          <li>
+            Ficar atento ao dia <strong>(01/04/2025)</strong> e hora <strong>(10hrs)</strong><br>
+            para troca de óleo na engrenagem!
+          </li>
+        </ul>
+        <div class="dots orange-dots">
           <span></span><span></span><span></span>
         </div>
       </div>
-    </div>
 
 
-    <div class="sectionn orange-sectionn">
-      <div class="notice-header">
-        <i class="fas fa-thumbtack"></i> AVISO: 25/03 - 11h35
-      </div>
-      <hr />
-      <h3>MANUTENÇÃO NO ÓLEO DO TREM 571</h3>
-      <ul>
-        <li>
-          Ficar atento ao dia <strong>(01/04/2025)</strong> e hora <strong>(10hrs)</strong><br>
-          para troca de óleo na engrenagem!
-        </li>
-      </ul>
-      <div class="dots orange-dots">
-        <span></span><span></span><span></span>
+      <div class="train-image">
+        <img src="../img/tremandando.png" alt="">
       </div>
     </div>
 
+  </header>
 
-    <div class="train-image">
-      <img src="../img/tremandando.png" alt="">
-    </div>
-  </div>
-
-    </header>
-    
 </body>
+
 </html>

@@ -24,19 +24,19 @@ function fecharMenu() {
 
 //botão de voltar
 
-  document.getElementById("backBtn").addEventListener("click", function(){
-    history.back();
-  });
+document.getElementById("backBtn").addEventListener("click", function () {
+  history.back();
+});
 
 
-  //monitoramento
+//monitoramento
 
-  function mostrarDetalhes(tipo) {
-    const detalhes = document.getElementById('detalhes');
-    let html = '';
-  
-    if (tipo === 'manutencao') {
-      html = `
+function mostrarDetalhes(tipo) {
+  const detalhes = document.getElementById('detalhes');
+  let html = '';
+
+  if (tipo === 'manutencao') {
+    html = `
           <section class="manutencao">
           <h2>ALERTA PARA MANUTENÇÃO!</h2>
           <img src="../img/trem.png" alt="Trem" style="width: 300px; height: 500px;">
@@ -50,11 +50,12 @@ function fecharMenu() {
           <h3>Renovação:</h3><p>6 meses ou 50.000 km</p>
         </section>
       `;
-  
-  detalhes.innerHTML = html;
-  detalhes.classList.remove('hidden');
-  }
-  
-  function voltar() {
-    document.getElementById('detalhes').classList.add('hidden');
-  }
+
+    detalhes.innerHTML = html;
+    detalhes.classList.remove('hidden');
+  } else { }
+};
+
+// function voltar() {
+//   document.getElementById('detalhes').classList.add('hidden');
+// }
