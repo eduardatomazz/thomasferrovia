@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio Funcionario</title>
-  <link rel="stylesheet" href="../styles/style.css">
-  <script src="../scripts/script.js"></script>
-</head>
+<?php require_once __DIR__. '/../partials/header.php'; ?>
+
   <body id="inicio_menu">
   <header>
     <div id="navbar">
