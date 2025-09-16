@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Funcionario</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="../scripts/logininicial.js"></script>
 </head>
 
 <body id="comfundo">
@@ -15,14 +15,14 @@
         <div class="cor">
         </div>
     </header>
-    <MAIn>
+    <main>
         <section>
             <section id="entrar">
                 <div class="azul">
                     <div class="inf_azul">
                         <div>
-                        <h3>CONECTE-SE AGORA</h3>
-                            <form id="formLogin">
+                            <h3>CONECTE-SE AGORA</h3>
+                            <form id="formLoginAdm">
                                 <label for="usuario">Login:</label><br>
                                 <input type="text" id="usuario" name="usuario">
                                 <div class="error" id="erroUsuario"></div><br><br>
@@ -30,16 +30,16 @@
                                 <label for="senha">Senha:</label><br>
                                 <input type="password" id="senha" name="senha">
                                 <div class="error" id="erroSenha"></div><br><br>
+                                
                                 <a href="../public/senha.html">Esqueceu a senha?</a>
-                                <button class="botao3" type="submit">ACESSAR</button>                               
+                                <button class="botao3" type="submit">ACESSAR</button>
                             </form>
-                        </div>
-    
+                        </div>      
                     </div>
                 </div>
             </section>
         </section>
-    </MAIn>
+    </main>
+    <script src="../scripts/login.js"></script>    
 </body>
-
 </html>

@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rota 2</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body id="comfundo2">
@@ -50,6 +51,6 @@
         </div>
     </header>
     
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/script.js"></script>    
 </body>
 </html>
