@@ -1,13 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notificar o motorista </title>
+    <title>Notificar o motorista</title>
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-
 <body>
-    <header>
+     <header>
         <div id="navbar">
             <button id="backBtn"><</button>
             <img id="icon" src="../img/logo_cabecalho.png" alt="">
@@ -30,5 +30,6 @@
       <script src="../scripts/script.js"></script>
 </body>
 </html>
+
 
     

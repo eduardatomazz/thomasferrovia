@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <script src="../scripts/script.js"></script>
 </head>
 
-<body id="semfundo">
+    <body id="semfundo">
     <header>
         <div id="navbar">
             <button id="backBtn"><</button>
@@ -23,33 +23,29 @@
 
     <div class="flex">
         <div class="numero">
-            <h3>2431</h3>
-            <div class="flex"><img class="verde" src="../img/circuloverde.png" alt="">
-                <p>EM MOVIMENTO</h1>
+            <h3>9876</h3>
+            <div class="flex"><img class="verde" src="../img/circulovermelho.png" alt="">
+                <p>PARADO</h1>
                 </p>
             </div>
             <br>
             <p>VELOCIDADE:</p>
-            <p>420KM/H</p>
+            <p>340KM/H</p>
             <br>
             <p>HORÁRIOS:</p>
             <p>Saída:</p>
-            <p class="horario">14:30</p>
+            <p class="horario">17:53</p>
             <p>Previsão de chegada:</p>
-            <p class="horario">16:52</p>
-        </div>
-        <div class="vermelho">
-            <p>O container oito do trem esta amassado por detritos que voaram no caminho quando saiu de São Paulo</p>
+            <p class="horario">22:24</p>
         </div>
     </div>
-
     </div>
     <div class="destino">
-        <p>DESPACHO: SÃO PAULO</p>
-        <p>DESTINO: PORTO ALEGRE</p>
+        <p>DESPACHO: ITAJAÍ</p>
+        <p>DESTINO: ARARUAMA</p>
     </div>
 
         <script src="../scripts/script.js"></script>
 </body>
-
 </html>
+

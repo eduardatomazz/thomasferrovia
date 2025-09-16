@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="../styles/style.css">
     <script src="../scripts/script.js"></script>
 </head>
-
 <body id="semfundo">
-   <header>
+    <header>
         <div id="navbar">
-            <button id="backBtn"><</button>
             <img id="icon" src="../img/logo_cabecalho.png" alt="">
+            <button id="backBtn"><</button>
         </div>
-        <div class="rotas">
-            <p>DASHBOARD</p>
-        </div>
+
     </header>
+
+    <div class="rotas">
+        <p>DASHBOARD</p>
+    </div>
 
     <div class="flex">
         <div class="numero">
-            <h3>5432</h3>
+            <h3>7658</h3>
             <div class="flex"><img class="verde" src="../img/circuloverde.png" alt="">
                 <p>EM MOVIMENTO</h1>
                 </p>
@@ -37,17 +38,18 @@
             <p class="horario">16:44</p>
         </div>
         <div class="vermelho">
-            <p>ALERTA EXTREMO: O trem esta parado no trilho em Curitiba por falha na engrenagem</p>
+            <p>A falta de sinalização esta causando 1 hora de atraso do horário previsto de chegada</p>
         </div>
     </div>
 
     </div>
     <div class="destino">
-        <p>DESPACHO: BLUMENAU</p>
-        <p>DESTINO: JOINVILLE</p>
+        <p>DESPACHO: JOINVILLE</p>
+        <p>DESTINO: INÁCIO MARTINS</p>
     </div>
 
         <script src="../scripts/script.js"></script>
+    
 </body>
-
 </html>
+
