@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Exemplo de usuário e senha fixos (substitua por consulta ao banco de dados)
     $usuarioCorreto = 'funcuser';
-    $senhaCorreta = 'Func@123';
+    $senhaCorreta = 'Func@12345';
 
     if (empty($erros)) {
         if ($usuario === $usuarioCorreto && $senha === $senhaCorreta) {
