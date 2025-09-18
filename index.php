@@ -7,8 +7,6 @@
     </div>
     <div class="botao_inicio">
         <a href="public/entrar.html" class="botao">LOGIN</a>
-
     </div>
-   
 </body>
 </html>
