@@ -109,8 +109,8 @@ CREATE TABLE Alerta_Sistema (
 
 CREATE TABLE Usuario (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
-     nome VARCHAR(100) NOT NULL,
-    email VARCHAR(200) NOT NULL UNIQUE,
+    nome VARCHAR(100) NOT NULL,
+    usuario VARCHAR(200) NOT NULL UNIQUE,
     senha VARCHAR(20) NOT NULL
 );
 
@@ -141,3 +141,5 @@ CREATE TABLE Leitura_Sensor (
     data_hora DATETIME,
     FOREIGN KEY(id_sensor_fk) REFERENCES Sensor(id_sensor)
 );
+
+INSERT INTO usuario (nome, usuario, senha) VALUES ('funcionario', 'funcuser', 'Func@123');
