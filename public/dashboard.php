@@ -56,7 +56,7 @@
     <a href="emmovimento5.html" class="botao5">ACESSAR</a>
 </div>
 
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/script.php"></script>
 </body>
 
 </html>

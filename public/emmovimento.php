@@ -39,7 +39,7 @@
         <p>DESTINO: JOINVILLE</p>
     </div>
 
-        <script src="../scripts/script.js"></script>
+        <script src="../scripts/script.php"></script>
 </body>
 </html>
 

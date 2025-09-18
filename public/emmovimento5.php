@@ -41,7 +41,7 @@
         <p>DESTINO: INÁCIO MARTINS</p>
     </div>
 
-        <script src="../scripts/script.js"></script>
+        <script src="../scripts/script.php"></script>
     
 </body>
 </html>

@@ -33,6 +33,6 @@
             </section>
         </section>
     </main>
-    <script src="../scripts/login.js"></script>    
+    <script src="../scripts/login.php"></script>    
 </body>
 </html>

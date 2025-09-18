@@ -20,7 +20,7 @@
                     <a href="../public/notmotorista.html" class="botao0">NOTIFICAR O MOTORISTA</a>
                 </section>
 
-    <script src="../scripts/script.js"></script>
+    <script src="../scripts/script.php"></script>
 </body>
 </html>
 

@@ -15,7 +15,7 @@
         <button type="submit">Entrar</button>
         <a href="../public/senha.html">Esqueceu a senha?</a>
     </form>
-    <script src="../scripts/logininicial.js"></script>
+    <script src="../scripts/logininicial.php"></script>
 </body>
 
 </html>

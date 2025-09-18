@@ -51,6 +51,6 @@ Data: 30/05/2025</h1>
     
       <div id="detalhes" class="hidden"></div>
 
-    <script src="../scripts/script.js"></script>  
+    <script src="../scripts/script.php"></script>  
 </body>
 </html>

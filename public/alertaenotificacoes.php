@@ -31,7 +31,7 @@
                     <a href="../public/acaoimediata.html" class="botao23">AÇÃO IMEDIATA</a>
                 </section>
            
-        <script src="../scripts/script.js"></script>
+        <script src="../scripts/script.php"></script>
     </body>
 </body>
 </html>
