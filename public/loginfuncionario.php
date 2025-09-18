@@ -1,4 +1,11 @@
-<?php require_once __DIR__. '/../partials/header.php'; ?>
+
+<?php 
+
+require_once (__DIR__. '/../partials/header.php');
+require_once (__DIR__. '/../php/logininicial.php');
+
+
+?>
 
 <body >
     <header>
@@ -15,7 +22,7 @@
                     <div class="inf_azul">
                         <div>
                         <h3>CONECTE-SE AGORA</h3>
-                            <form id="formLogin">
+                            <form id="formLogin" method="post">
                                 <label for="usuario">Login:</label><br>
                                 <input type="text" id="usuario" name="usuario">
                                 <div class="error" id="erroUsuario"></div><br><br>
@@ -23,7 +30,7 @@
                                 <label for="senha">Senha:</label><br>
                                 <input type="password" id="senha" name="senha">
                                 <div class="error" id="erroSenha"></div><br><br>
-                                <a href="../public/senha.html">Esqueceu a senha?</a>
+                                <a href="../public/senha.php">Esqueceu a senha?</a>
                                 <button class="botao3" type="submit">ACESSAR</button>                               
                             </form>
                         </div>

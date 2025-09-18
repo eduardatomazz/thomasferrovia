@@ -1,4 +1,9 @@
-<?php require_once __DIR__. '/../partials/header.php'; ?>
+
+<?php 
+
+require_once (__DIR__. '/../partials/header.php');
+
+?>
 
 <body id="comfundo">
 
@@ -16,11 +21,11 @@
             <div class="inf_azul">
                 <h3> ENTRAR COMO: </h3>
                 <section>
-                    <a href="../public/loginfuncionario.html" class="botao2">FUNCIONÁRIO</a>
+                    <a href="../public/loginfuncionario.php" class="botao2">FUNCIONÁRIO</a>
                 </section>
                 <h3>OU</h3>
                 <section>
-                    <a href="../public/login.html" class="botao2">ADMINISTRADOR</a>
+                    <a href="../public/login.php" class="botao2">ADMINISTRADOR</a>
                 </section>
             </div>
         </div>

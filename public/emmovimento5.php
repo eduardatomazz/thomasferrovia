@@ -1,4 +1,8 @@
-<?php require_once __DIR__. '/../partials/header.php'; ?>
+
+<?php 
+
+require_once (__DIR__. '/../partials/header.php');
+?>
 
 <body id="semfundo">
     <header>

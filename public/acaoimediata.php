@@ -1,4 +1,9 @@
-<?php require_once __DIR__. '/../partials/header.php'; ?>
+
+<?php 
+
+require_once (__DIR__. '/../partials/header.php');
+
+?>
 
 <body id="comfundo">
 
@@ -13,11 +18,11 @@
     </header>
     
                 <section>
-                    <a href="../public/eqmanutencao.html" class="botao0">ATIVAR EQUIPE DE MANUTENÇÃO</a>
+                    <a href="../public/eqmanutencao.php" class="botao0">ATIVAR EQUIPE DE MANUTENÇÃO</a>
                 </section>
                 
                 <section>
-                    <a href="../public/notmotorista.html" class="botao0">NOTIFICAR O MOTORISTA</a>
+                    <a href="../public/notmotorista.php" class="botao0">NOTIFICAR O MOTORISTA</a>
                 </section>
 
     <script src="../scripts/script.php"></script>

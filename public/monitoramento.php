@@ -1,4 +1,9 @@
-<?php require_once __DIR__. '/../partials/header.php'; ?>
+
+<?php 
+
+require_once (__DIR__. '/../partials/header.php');
+
+?>
 
 <body>
     <header>
@@ -13,13 +18,13 @@
         <div id="menuLateral" class="menu-lateral">
       <button class="fechar-btn" onclick="fecharMenu()">X</button>
       <ul>
-        <li><a href="../public/inicioadm.html">INÍCIO</a></li>
-        <li><a href="../public/dashboard.html">DASHBOARD</a></li>
-        <li><a href="../public/rotas.html">ROTAS</a></li>
-        <li><a href="../public/monitoramento.html">MONITORAMENTO</a></li>
-        <li><a href="../public/relatorioeanalise.html">RELATÓRIO E ANÁLISE</a></li>
-        <li><a href="../public/alertaenotificacoes.html">ALERTAS E NOTIFICAÇÕES</a></li>
-        <li><a href="../index.html">SAIR</a></li>
+        <li><a href="../public/inicioadm.php">INÍCIO</a></li>
+        <li><a href="../public/dashboard.php">DASHBOARD</a></li>
+        <li><a href="../public/rotas.php">ROTAS</a></li>
+        <li><a href="../public/monitoramento.php">MONITORAMENTO</a></li>
+        <li><a href="../public/relatorioeanalise.php">RELATÓRIO E ANÁLISE</a></li>
+        <li><a href="../public/alertaenotificacoes.php">ALERTAS E NOTIFICAÇÕES</a></li>
+        <li><a href="../index.php">SAIR</a></li>
       </ul>
     </div>
     

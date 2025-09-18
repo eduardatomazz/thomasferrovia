@@ -1,34 +1,38 @@
 <?php
 
-document.addEventListener("DOMContentLoaded", function () {
-    const formulario = document.getElementById("formLoginAdm");
+session_start();
 
-    formulario.addEventListener("submit", function (e) {
-        e.preventDefault();
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $usuario = isset($_POST['usuario']) ? trim($_POST['usuario']) : '';
+    $senha = isset($_POST['senha']) ? trim($_POST['senha']) : '';
+    $erros = [];
 
-        let valido = true;
+    if (strlen($usuario) < 7) {
+        $erros['usuario'] = 'Usuário inválido';
+    }
+    $senhaRegex = '/^(?=.\d)(?=.[a-z])(?=.[A-Z])(?=.[$&@#])[0-9a-zA-Z$&@#]{8,}$/';
+    if (!preg_match($senhaRegex, $senha)) {
+        $erros['senha'] = 'Senha inválida. Deve ter pelo menos 8 caracteres, sendo eles pelo menos 1 letra maiúscula, 1 número, 1 símbolo';
+    }
 
-        document.getElementById("erroUsuario").textContent = "";
-        document.getElementById("erroSenha").textContent = "";
+    // Exemplo de usuário e senha fixos (substitua por consulta ao banco de dados)
+    $usuarioCorreto = 'adminuser';
+    $senhaCorreta = 'Admin@123';
 
-        const usuario = document.getElementById("usuario").value.trim();
-        const senha = document.getElementById("senha").value.trim();
-
-        if (usuario.length < 7){
-            document.getElementById("erroUsuario").textContent = "Usuário invalido";
-            valido = false;
+    if (empty($erros)) {
+        if ($usuario === $usuarioCorreto && $senha === $senhaCorreta) {
+            $_SESSION['admin'] = $usuario;
+            header('Location: ../public/inicioadm.php');
+            exit();
+        } else {
+            $erros['geral'] = 'Usuário ou senha incorretos.';
         }
-        const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
-
-        if (!senhaRegex.test(senha)) {
-            document.getElementById("erroSenha").textContent = "Senha inválida. Deve ter pelo menos 8 caracteres, sendo eles pelo menos 1 letra maiuscula, 1 numero, 1 simbolo";
-            valido = false;
-        }
-
-        if (valido) {
-            formulario.reset();
-            window.location.href = "../public/inicioadm.html";
-        }
-    });
-});
+    }
+}
 ?>
+<!-- Exemplo de exibição de erros e formulário (adicione ao seu HTML) -->
+<?php if (!empty($erros)): ?>
+    <div style="color:red;">
+        <?php foreach ($erros as $erro) echo '<p>' . $erro . '</p>'; ?>
+    </div>
+<?php endif; ?>

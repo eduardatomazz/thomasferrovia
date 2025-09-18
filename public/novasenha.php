@@ -1,4 +1,9 @@
-<?php require_once __DIR__. '/../partials/header.php'; ?>
+
+<?php 
+
+require_once (__DIR__. '/../partials/header.php');
+
+?>
 
 <body id="comfundo">
     <header>
@@ -24,7 +29,7 @@
                             <br>
                             <input type="password" id="senha" name="senha">
                         </div>
-                        <a href="../public/login.html" class="botao3">CONFIRMAR</a>
+                        <a href="../public/login.php" class="botao3">CONFIRMAR</a>
                     </div>
                 </div>
             </section>

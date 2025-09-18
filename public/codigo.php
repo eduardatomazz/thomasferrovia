@@ -1,4 +1,9 @@
-<?php require_once __DIR__. '/../partials/header.php'; ?>
+
+<?php 
+
+require_once (__DIR__. '/../partials/header.php');
+
+?>
 
 <body id="comfundo">
 
@@ -17,7 +22,7 @@
           <form>
 
             <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-            <a href="novasenha.html" class="botao3">ENVIAR</a>
+            <a href="novasenha.php" class="botao3">ENVIAR</a>
           </form>
           <p>Caso não encontre o e-mail na sua caixa de <br> entrada, verifique a pasta de Spam!</p>
         </div>
