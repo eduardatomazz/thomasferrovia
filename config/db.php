@@ -1,17 +1,10 @@
 <?php
 
 
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "thomasferrovia_db";
 
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-if ($conn->connect_error) {
-    die("Conexao falhou: " . $conn->connect_error);
+$mysqli = new mysqli("localhost", "root", "root", "thomasferrovia_db");
+if ($mysqli->connect_errno) {
+    die("Erro de conexão: " . $mysqli->connect_error);
 }
 
 

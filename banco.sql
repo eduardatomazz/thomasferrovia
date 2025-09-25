@@ -144,4 +144,4 @@ CREATE TABLE Leitura_Sensor (
     FOREIGN KEY(id_sensor_fk) REFERENCES Sensor(id_sensor)
 );
 
-INSERT INTO usuario (nome, usuario, senha) VALUES ('funcionario', 'funcuser', 'Func@123');
+INSERT INTO Usuario (nome, usuario, email, idade, senha) VALUES ('Larissa Boing', 'larissa_boing', 'larissa_boing@gmail.com', '20', 'larissa@123');
