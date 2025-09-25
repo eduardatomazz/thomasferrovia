@@ -28,7 +28,7 @@ require_once (__DIR__. '/../partials/header.php');
                                 $email =  $_POST['email'] ?? "";
                                 $pass = $_POST['senha'] ?? "";
 
-                                $stmt = $mysqli->prepare("SELECT id_usuario, nome, usuario, email, idade, senha FROM usuario WHERE email=? AND senha=?");
+                                $stmt = $mysqli->prepare("SELECT id_usuario, nome, usuario, email, idade, senha FROM usuario_func WHERE email=? AND senha=?");
                                 $stmt->bind_param("ss", $email, $pass);
                                 $stmt->execute();
                                 $result = $stmt->get_result();
