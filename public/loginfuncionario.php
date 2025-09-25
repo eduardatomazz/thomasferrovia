@@ -20,6 +20,34 @@ require_once (__DIR__. '/../php/logininicial.php');
             <section id="entrar">
                 <div class="azul">
                     <div class="inf_azul">
+                        <?php
+
+                            include("../config/db.php");
+                            if(isset($_POST('submit'))){
+                                $email = mysqli_real_escape_string($con, $_POST['email']);
+                                $password = mysqli_real_escape_string($con, $_POST['password']);
+
+                                $result = mysqli_query($con, "SELECT * FROM users WHERE email= '$email' AND senha='$password' ") or die("Select Error");
+                                $row = mysqli_fetch_assoc($result);
+
+                                if(is_array($row) && !empty($row)){
+                                    $_SESSION['valid'] = $row['Email'];
+                                    $_SESSION['username'] = $row['Username'];
+                                    $_SESSION['age'] = $row['Age'];
+                                    $_SESSION['id'] = $row['Id'];
+                                }else{
+                                    echo "<div calss='message'>
+                                    <p>Wrong Username or Password</p>
+                                    </div> <br> ";
+                                    echo "<a href='index.php'><button class='btn' >Go Back</buttom> ";
+
+                                    }
+                                if(isset($_SESSION['valid'])){
+                                    header("Location: iniciofuncionario.php");
+                                }
+                            }else{
+                        ?>
+
                         <div>
                         <h3>CONECTE-SE AGORA</h3>
                             <form id="formLogin" method="post">
@@ -36,6 +64,7 @@ require_once (__DIR__. '/../php/logininicial.php');
                         </div>
     
                     </div>
+                    <?php } ?>
                 </div>
             </section>
         </section>
