@@ -4,7 +4,7 @@ include "../config/db.php";
 
 session_start();
 
-if(empty($_SESSION["user_pk"])){
+if(empty($_SESSION["id_usuario"])){
     header("Location: cadastro.php");
     exit;
 };
@@ -29,7 +29,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
         $register = "Preencha todos os campos.";
     };
 };
-
 ?>
 
 
@@ -42,9 +41,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
 <body>
     
     <form method="post">
-        <h2>Bem-vindo, <?= $_SESSION["username"] ?>!</h2>
+        <h2>Bem-vindo, <?php= $_SESSION["username"] ?>!</h2>
         <h3>Cadastro Novo Usuário</h3>
-        <?php if($register_msg):  ?> <p> <?= $register_msg ?> </p> <?php endif; ?>
+        <?php if($register_msg):  ?> <p> <?php= $register_msg ?> </p> <?php endif; ?>
         <input type="text" name="new_username" placeholder="Novo Usuário" required>
         <input type="password" name="new_password" placeholder="Nova Senha" required>
         <select name="new_func">
