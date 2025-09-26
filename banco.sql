@@ -129,21 +129,21 @@ CREATE TABLE Sensor (
     id_sensor INT PRIMARY KEY AUTO_INCREMENT,
     tipo_sensor VARCHAR(50),
     local_instalacao VARCHAR(100),
-    descricao_sensor VARCHAR(100),
-    status_sensor VARCHAR(100),
     id_trem INT,
     id_estacao INT,
     FOREIGN KEY (id_trem) REFERENCES Trem(id_trem),
     FOREIGN KEY (id_estacao) REFERENCES Estacao(id_estacao)
 );
 
-CREATE TABLE Sensor_Data (
+CREATE TABLE Leitura_Sensor (
     id_leitura INT PRIMARY KEY AUTO_INCREMENT,
     id_sensor_fk INT,
     valor DECIMAL(10,2),
+    unidade VARCHAR(10),
     data_hora DATETIME,
     FOREIGN KEY(id_sensor_fk) REFERENCES Sensor(id_sensor)
 );
 
 INSERT INTO Usuario_adm (nome, usuario, email, idade, senha) 
 VALUES ('Larissa Boing', 'larissa_boing', 'larissa_boing@gmail.com', '20', 'larissa@123'), ('Laura Kasten', 'laura_kasten', 'laura_kasten@gmail.com', '21', 'laura@123'), ('Gabriela Bonelli', 'gabriela_bonelli','gabriela_bonelli@gmail.com', '22', 'gabriela@123'), ('Eduarda Tomaz', 'eduarda_tomaz', 'eduarda_tomaz@gmail.com','20','eduarda@123');
+
