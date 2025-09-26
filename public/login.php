@@ -42,7 +42,9 @@ require_once (__DIR__. '/../partials/header.php');
                                     header("Location: inicioadm.php");
                                     exit;
                                 } else {
-                                    $msg = "Usuário ou senha incorretos!";
+                                    echo "<div>
+                                    <p>Usuário ou senha incorretos!</p>
+                                    </div>";
                                 } 
 
                             }
