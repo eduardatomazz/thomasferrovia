@@ -129,17 +129,18 @@ CREATE TABLE Sensor (
     id_sensor INT PRIMARY KEY AUTO_INCREMENT,
     tipo_sensor VARCHAR(50),
     local_instalacao VARCHAR(100),
+    descricao_sensor VARCHAR(100),
+    status_sensor VARCHAR(100),
     id_trem INT,
     id_estacao INT,
     FOREIGN KEY (id_trem) REFERENCES Trem(id_trem),
     FOREIGN KEY (id_estacao) REFERENCES Estacao(id_estacao)
 );
 
-CREATE TABLE Leitura_Sensor (
+CREATE TABLE Sensor_Data (
     id_leitura INT PRIMARY KEY AUTO_INCREMENT,
     id_sensor_fk INT,
     valor DECIMAL(10,2),
-    unidade VARCHAR(10),
     data_hora DATETIME,
     FOREIGN KEY(id_sensor_fk) REFERENCES Sensor(id_sensor)
 );
