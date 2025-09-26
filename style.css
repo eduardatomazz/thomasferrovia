@@ -1098,3 +1098,20 @@ h3{
 .notificar-secction{
   margin-left: 50px;
 }
+
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 32px;
+  z-index: 4;
+  position: relative;
+  color: #3f3d34;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: rgba(25, 49, 84, 0.15);
+  transition: background 0.2s;
+}
+
+.menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}

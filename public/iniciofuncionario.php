@@ -7,21 +7,27 @@ require_once (__DIR__. '/../partials/header.php');
 
   <body id="inicio_menu">
   <header>
-    <div id="navbar">
-      <img id="icon" src="../img/logo_cabecalho.png" alt="">
-    </div>
-    <div id="menuLateral" class="menu-lateral">
-      <button class="fechar-btn" onclick="fecharMenu()">X</button>
-      <ul>
-        <li><a href="../public/iniciofuncionario.php">INÍCIO</a></li>
-        <li><a href="../public/dashboard.php">DASHBOARD</a></li>
-        <li><a href="../public/rotas.php">ROTAS</a></li>
-        <li><a href="../public/monitoramento.php">MONITORAMENTO</a></li>
-        <li><a href="../public/alertaenotificacoes.php">ALERTAS E NOTIFICAÇÕES</a></li>
-        <li><a href="../index.php">SAIR</a></li>
-      </ul>
-    </div>
-    <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()" method="post" >☰</button>
+     <nav> 
+      <script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("active"); // por exemplo
+  }
+</script>
+      <p><img src="../style/assets/IESEM (1).png" alt="logo" id="logo_hardset"></p>
+           <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div id="menu">
+        <ul>
+           <li><a href="../public/dashboard.php">DASHBOARD</a></li>
+         <li><a href="../public/rotas.php">ROTAS</a></li>
+          <li><a href="../public/monitoramento.php">MONITORAMENTO</a></li>
+          <li><a href="../public/relatorioeanalise.php">RELATÓRIO E ANÁLISE</a></li>
+          <li><a href="../public/alertaenotificacoes.php">ALERTAS E NOTIFICAÇÕES</a></li>
+          <li><a href="../cadastro/cadastro.php">CADASTRAR NOVOS USUÁRIOS</a></li>
+          <li><a href="../index.php">SAIR</a></li>
+        </ul>
+      </div> 
+    </nav>
 
     <div class="containerr">
       <div class="sectionn green-sectionn">
