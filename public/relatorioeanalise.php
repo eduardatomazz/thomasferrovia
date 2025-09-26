@@ -27,7 +27,7 @@
         ["Linha C", 1900, "color: #e67e22"]
       ]);
 
-      var view = new google.visualization.DataView(data);
+    var view = new google.visualization.DataView(data);
       view.setColumns([
         0,
         1,

@@ -125,13 +125,13 @@ CREATE TABLE Usuario_fun (
     senha VARCHAR(20) NOT NULL
 );
 
-CREATE TABLE Alerta_Usuario (
-    id_alerta_usuario INT PRIMARY KEY AUTO_INCREMENT,
-    id_alerta INT,
-    id_usuario INT,
-    tipo_entrega VARCHAR(20),
-    FOREIGN KEY(id_alerta) REFERENCES Alerta_Sistema(id_alerta),
-    FOREIGN KEY(id_usuario) REFERENCES Usuario(id_usuario)
+CREATE TABLE Usuario_func (
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    usuario VARCHAR(200) NOT NULL UNIQUE,
+    email VARCHAR(200) NOT NULL UNIQUE,
+    idade INT NOT NULL,
+    senha VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Sensor (
