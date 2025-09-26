@@ -1,13 +1,7 @@
 <?php
 
-include "../config/db.php";
+include "../config/db2.php";
 
-session_start();
-
-if(empty($_SESSION["id_usuario"])){
-    header("Location: cadastro.php");
-    exit;
-};
 
 $register_msg = "";
 if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
@@ -15,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
     $new_pass = $_POST['new_password'] ?? "";
     $new_func = $_POST['new_func'] ?? "";
     if($new_user && $new_pass){
-        $stmt = $mysqli -> prepare("INSERT INTO usuarios (username, senha, cargo) VALUES (?,?,?)");
+        $stmt = $mysqli -> prepare("INSERT INTO usuario (id_usuario, nome, usuario, email, idade, senha) VALUES (?,?,?)");
         $stmt -> bind_param("sss", $new_user, $new_pass,$new_func);
         
         if($stmt->execute()) {
@@ -37,9 +31,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Novo Usuário do Sistema</title>
+    <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    
+    <div id= "comfundo"></div>
     <form method="post">
         <h2>Bem-vindo, <?php= $_SESSION["username"] ?>!</h2>
         <h3>Cadastro Novo Usuário</h3>

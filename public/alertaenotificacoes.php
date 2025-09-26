@@ -27,7 +27,6 @@ require_once (__DIR__. '/../partials/header.php');
     
     <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()">☰</button>
     </header>
-    
                 <section>
                     <a href="../public/principais.php" class="botao22">PRINCIPAIS</a>
                 </section>

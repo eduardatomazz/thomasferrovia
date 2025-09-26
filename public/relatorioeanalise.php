@@ -94,13 +94,22 @@
     }
   </script>
 </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="../style.css">
 
+  <title>Document</title>
+</head>
+
+</html>
 <body id="semfundorelatorioeanalise">
-  <header>
-  <div id="navbar">
-    <img id="icon" src="../img/logo_cabecalho.png" alt="" />
-  </div>
-  <div id="menuLateral" class="menu-lateral">
+   <header>
+    <div id="navbar">
+      <img id="icon" src="../img/logo_cabecalho.png" alt="">
+    </div>
+    <div id="menuLateral" class="menu-lateral">
       <button class="fechar-btn" onclick="fecharMenu()">X</button>
       <ul>
         <li><a href="../public/inicioadm.php">INÍCIO</a></li>
@@ -109,12 +118,10 @@
         <li><a href="../public/monitoramento.php">MONITORAMENTO</a></li>
         <li><a href="../public/relatorioeanalise.php">RELATÓRIO E ANÁLISE</a></li>
         <li><a href="../public/alertaenotificacoes.php">ALERTAS E NOTIFICAÇÕES</a></li>
+        <li><a href="../cadastro/cadastro.php">CADASTRAR NOVOS USUÁRIOS</a></li>
         <li><a href="../index.php">SAIR</a></li>
       </ul>
     </div>
-    
-    <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()">☰</button>
-  </header>
 
   <div class="parteLaranja">
     <h5>RELATÓRIO E ANÁLISE</h5>
