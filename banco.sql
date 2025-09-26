@@ -147,5 +147,5 @@ CREATE TABLE Leitura_Sensor (
 INSERT INTO Usuario_adm (nome, usuario, email, idade, senha) 
 VALUES ('Larissa Boing', 'larissa_boing', 'larissa_boing@gmail.com', '20', 'larissa@123'), ('Laura Kasten', 'laura_kasten', 'laura_kasten@gmail.com', '21', 'laura@123'), ('Gabriela Bonelli', 'gabriela_bonelli','gabriela_bonelli@gmail.com', '22', 'gabriela@123'), ('Eduarda Tomaz', 'eduarda_tomaz', 'eduarda_tomaz@gmail.com','20','eduarda@123');
 
-INSERT INTO usuarios_func (username, senha, cargo) 
+INSERT INTO Usuario_func (username, senha, cargo) 
 VALUES (?,?,?);

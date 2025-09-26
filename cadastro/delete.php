@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+include '../config/db.php';
 $id = $_GET['id'];
 
 $sql = " DELETE FROM usuarios WHERE id=$id ";

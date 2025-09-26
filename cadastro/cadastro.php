@@ -1,11 +1,11 @@
 <?php
 
-include "db.php";
+include "../config/db.php";
 
 session_start();
 
 if(empty($_SESSION["user_pk"])){
-    header("Location: index.php");
+    header("Location: cadastro.php");
     exit;
 };
 
