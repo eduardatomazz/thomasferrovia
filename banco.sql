@@ -107,16 +107,7 @@ CREATE TABLE Alerta_Sistema (
     data_hora DATETIME
 );
 
-CREATE TABLE Usuario_adm (
-    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(100) NOT NULL,
-    usuario VARCHAR(200) NOT NULL UNIQUE,
-    email VARCHAR(200) NOT NULL UNIQUE,
-    idade INT NOT NULL,
-    senha VARCHAR(20) NOT NULL
-);
-
-CREATE TABLE Usuario_func (
+CREATE TABLE Usuario (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(100) NOT NULL,
     usuario VARCHAR(200) NOT NULL UNIQUE,
@@ -144,8 +135,6 @@ CREATE TABLE Leitura_Sensor (
     FOREIGN KEY(id_sensor_fk) REFERENCES Sensor(id_sensor)
 );
 
-INSERT INTO Usuario_adm (nome, usuario, email, idade, senha) 
+INSERT INTO Usuario (nome, usuario, email, idade, senha) 
 VALUES ('Larissa Boing', 'larissa_boing', 'larissa_boing@gmail.com', '20', 'larissa@123'), ('Laura Kasten', 'laura_kasten', 'laura_kasten@gmail.com', '21', 'laura@123'), ('Gabriela Bonelli', 'gabriela_bonelli','gabriela_bonelli@gmail.com', '22', 'gabriela@123'), ('Eduarda Tomaz', 'eduarda_tomaz', 'eduarda_tomaz@gmail.com','20','eduarda@123');
 
-INSERT INTO Usuario_func (username, senha, cargo) 
-VALUES (?,?,?);
