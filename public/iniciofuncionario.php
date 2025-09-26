@@ -14,7 +14,6 @@ require_once (__DIR__. '/../partials/header.php');
     menu.classList.toggle("active"); // por exemplo
   }
 </script>
-      <p><img src="../style/assets/IESEM (1).png" alt="logo" id="logo_hardset"></p>
            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <div id="menu">
         <ul>
