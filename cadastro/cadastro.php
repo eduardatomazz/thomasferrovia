@@ -33,21 +33,37 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
     <title>Cadastro de Novo Usuário do Sistema</title>
     <link rel="stylesheet" href="../style.css" />
 </head>
-<body>
-    
-    <form method="post">
-        <h2>Bem-vindo <?php= $_SESSION["username"] ?>!</h2>
-        <h3>Cadastro Novo Usuário</h3>
-        <?php if($register_msg):  ?> <p> <?php= $register_msg ?> </p> <?php endif; ?>
-        <input type="text" name="new_username" placeholder="Novo Usuário" required>
-        <input type="password" name="new_password" placeholder="Nova Senha" required>
-        <select name="new_func">
-            <option value="adm">ADM</option>
-            <option value="func" selected>FUNC</option>
-        </select>
-        <button type="submit" name="register" value="1"> Cadastrar</button>
-    </form>
-    <p><a href="../public/inicioadm.php">Voltar</a></p>
+    <body id="comfundo">
+
+    <body>
+        <header>
+            <div id="navbar">
+                <img id="icon" src="../img/logo_cabecalho.png" alt="">
+            </div>
+            <div class="cor">
+            </div>
+        </header>
+
+
+        <div class="azul">
+            <div class="inf_azul">
+                <form method="post">
+                    <h2>Bem-vindo <?php= $_SESSION["username"] ?>!</h2>
+                    <h3>Cadastro Novo Usuário</h3>
+                    <?php if($register_msg):  ?> <p> <?php= $register_msg ?> </p> <?php endif; ?>
+                    <input type="text" name="new_username" placeholder="Novo Usuário" required>
+                    <input type="password" name="new_password" placeholder="Nova Senha" required>
+                    <select name="new_func">
+                        <option value="adm">ADM</option>
+                        <option value="func" selected>FUNC</option>
+                    </select>
+                    <button type="submit" name="register" value="1"> Cadastrar</button>
+                </form>
+                <p><a href="../public/inicioadm.php">Voltar</a></p>
+                
+            </div>
+        </div>
+    </body>
     
 </body>
 </html>
