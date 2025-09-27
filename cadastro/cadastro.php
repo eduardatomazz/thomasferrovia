@@ -1,16 +1,20 @@
 <?php
 
-include "../config/db2.php";
+include "../config/db.php";
 
 
 $register_msg = "";
 if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
+    $new_nome = $_POST['new_nome'] ?? "";
     $new_user = $_POST['new_username'] ?? "";
     $new_pass = $_POST['new_password'] ?? "";
     $new_func = $_POST['new_func'] ?? "";
+    $new_email = $_POST['new_email'] ?? "";
+    $new_idade = $_POST['new_idade'] ?? "";
+
     if($new_user && $new_pass){
-        $stmt = $mysqli -> prepare("INSERT INTO usuario (id_usuario, nome, usuario, email, idade, senha) VALUES (?,?,?)");
-        $stmt -> bind_param("sss", $new_user, $new_pass,$new_func);
+        $stmt = $mysqli -> prepare("Insert Into Usuario ( nome, usuario, email, senha, adm, idade) VALUES (?, ?, ?, ?, ?,?)");
+        $stmt -> bind_param("ssssii", $new_nome, $new_user,$new_email, $new_pass,$new_func, $new_idade);
         
         if($stmt->execute()) {
             $register_msg = "Usuário cadastrado com sucesso!";
@@ -47,13 +51,19 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
 
         <div class="azul">
             <div class="inf_azul">
-                <form method="post" action="cadastrarUsuario.php">
+                <form method="post">
                     <h2>Bem-vindo <?php= $_SESSION["username"] ?>!</h2>
                     <h3>Cadastro Novo Usuário</h3>
                     <?php if($register_msg):  ?> <p> <?php= $register_msg ?> </p> <?php endif; ?>
+                    <input class="input" type="text" name="new_nome" placeholder="Nome" required> 
+                    <br>
                     <input class="input" type="text" name="new_username" placeholder="Novo Usuário" required> 
                     <br>
                     <input class="input" type="password" name="new_password" placeholder="Nova Senha" required>
+                    <input class="input" type="text" name="new_email" placeholder="E-mail" required> 
+                    <br>
+                    <input class="input" type="text" name="new_idade" placeholder="Idade" required> 
+                    <br>
                     <select class="botao3" name="new_func">
                         <option value="1">ADM</option>
                         <option value="0" selected>FUNC</option>
