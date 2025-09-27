@@ -452,12 +452,13 @@ body {
 
 
 .menu-lateral {
+  display: none;
   height: 100vh;
   width: 250px;
   background-color: #003f8a;
   position: fixed;
   top: 0;
-  left: -260px;
+  left: 0px;
   transition: left 0.3s ease;
   z-index: 1000;
   padding-top: 20px;

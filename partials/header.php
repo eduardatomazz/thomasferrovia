@@ -16,6 +16,7 @@ require_once (__DIR__. '../../config/db.php');
     <script src="../php/login.php"> </script>
     <script src="../php/logininicial.php"> </script>
     <script src="../php/notmotorista.php"> </script>
+
 </head>
 <header>
 

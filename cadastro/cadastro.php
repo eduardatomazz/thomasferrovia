@@ -34,9 +34,9 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
     <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-    <div id= "comfundo"></div>
+    
     <form method="post">
-        <h2>Bem-vindo, <?php= $_SESSION["username"] ?>!</h2>
+        <h2>Bem-vindo <?php= $_SESSION["username"] ?>!</h2>
         <h3>Cadastro Novo Usuário</h3>
         <?php if($register_msg):  ?> <p> <?php= $register_msg ?> </p> <?php endif; ?>
         <input type="text" name="new_username" placeholder="Novo Usuário" required>
@@ -47,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
         </select>
         <button type="submit" name="register" value="1"> Cadastrar</button>
     </form>
-    <p><a href="index.php">Voltar</a></p>
+    <p><a href="../public/inicioadm.php">Voltar</a></p>
     
 </body>
 </html>
