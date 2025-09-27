@@ -55,7 +55,7 @@ require_once (__DIR__. '/../partials/header.php');
                             <form id="formLogin" method="POST">
                                 <label for="usuario">Email:</label><br>
                                 <input type="email" id="email" name="email" required>
-                                <div class="error" id="erroUsuario"></div><br><br>
+                                <div class="error" id="erroUsuario"></div>
                                 
                                 <label for="senha">Senha:</label><br>
                                 <input type="password" id="senha" name="senha" required>

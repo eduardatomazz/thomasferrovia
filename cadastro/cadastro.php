@@ -47,17 +47,18 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
 
         <div class="azul">
             <div class="inf_azul">
-                <form method="post">
+                <form method="post" action="cadastrarUsuario.php">
                     <h2>Bem-vindo <?php= $_SESSION["username"] ?>!</h2>
                     <h3>Cadastro Novo Usuário</h3>
                     <?php if($register_msg):  ?> <p> <?php= $register_msg ?> </p> <?php endif; ?>
-                    <input type="text" name="new_username" placeholder="Novo Usuário" required>
-                    <input type="password" name="new_password" placeholder="Nova Senha" required>
-                    <select name="new_func">
-                        <option value="adm">ADM</option>
-                        <option value="func" selected>FUNC</option>
+                    <input class="input" type="text" name="new_username" placeholder="Novo Usuário" required> 
+                    <br>
+                    <input class="input" type="password" name="new_password" placeholder="Nova Senha" required>
+                    <select class="botao3" name="new_func">
+                        <option value="1">ADM</option>
+                        <option value="0" selected>FUNC</option>
                     </select>
-                    <button type="submit" name="register" value="1"> Cadastrar</button>
+                    <button class="botao2" type="submit" name="register" value="1">Cadastrar</button>
                 </form>
                 <p><a href="../public/inicioadm.php">Voltar</a></p>
                 
@@ -67,3 +68,4 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
     
 </body>
 </html>
+    
