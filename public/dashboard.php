@@ -63,5 +63,6 @@ require_once (__DIR__. '/../partials/header.php');
 
     <script src="../scripts/script.php"></script>
 </body>
+<script src="../scripts/menu.js"></script>
 
 </html>

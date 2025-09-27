@@ -57,4 +57,6 @@ Data: 30/05/2025</h1>
 
     <script src="../scripts/script.php"></script>  
 </body>
+<script src="../scripts/menu.js"></script>
+
 </html>
