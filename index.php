@@ -14,8 +14,6 @@
 <header>
 
 </header>
-
-
 <body id="semfundo">
     <div class="center">
         <img class="logo" src="img/logo.png" alt="">
