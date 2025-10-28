@@ -77,16 +77,15 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
                         </div>
                         <div>
                             <input class="inputt" type="text" name="new_CEP" placeholder="CEP" required> 
+                            <button type="submit" onclick="consultaCEP()" >Buscar</button>
                             <br>
-                            <input class="inputt" type="text" name="new_estado" placeholder="Estado" required> 
+                            <input class="inputt" type="text" name="endereco" placeholder="Endereço" required> 
                             <br>
-                            <input class="inputt" type="text" name="new_cidade" placeholder="Cidade" required> 
+                            <input class="inputt" type="text" name="bairro" placeholder="Bairro" required> 
                             <br>
-                            <input class="inputt" type="text" name="new_bairro" placeholder="Bairro" required> 
+                            <input class="inputt" type="text" name="cidade" placeholder="Cidade" required> 
                             <br>
-                            <input class="inputt" type="text" name="new_rua" placeholder="Rua" required> 
-                            <br>
-                            <input class="inputt" type="text" name="new_numero" placeholder="Numero" required> 
+                            <input class="inputt" type="text" name="uf" placeholder="UF" required> 
                             <br>
                         </div>
                     </div>
@@ -101,6 +100,21 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
                 
             </div>
         </div>
+        <script>
+            fuction consultaCEP(){
+                let cep = document.getElementById('cep').value
+                let url = 'viacep.com.br/ws/' + cep + '/json/'
+                fetch(url)
+                    .then(Response => response.json() )
+                    .then(data => {
+                        document.getElementById('endereco').value = data.logradouro
+                        document.getElementById('bairro').value = data.bairro
+                        document.getElementById('cidade').value = data.localidade
+                        document.getElementById('uf').value = data.uf
+                    })
+                    .catch(error => console.error(error))
+            }
+        </script>
     </body>
     
 </body>
