@@ -199,6 +199,26 @@
 }
 
 
+.inf_azull {
+    background-color: #023880;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 600px;
+    padding: 40px; 
+    margin-top: 80px;
+}
+
 .inf_azul {
     background-color: #023880;
     border-radius: 20px;
@@ -216,6 +236,10 @@
     width: 300px;
     height: 400px;
     padding: 20px; 
+}
+
+.trocarfoto{
+  font-size: 15px;
 }
 
 /* .inf_azul2 {
@@ -463,6 +487,20 @@ input {
     margin-bottom: 10px;
 }
 
+.inputt {
+    resize: none;
+    width: 170px;
+    height: 30px;
+    background-color: rgba(240, 248, 255, 0);
+    border-color: #ffffff;
+    border-width: 1px;
+    border-radius: 10px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-left: 5px;
+    
+}
 .menuu{
     font-size:10px;
 }

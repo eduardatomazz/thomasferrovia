@@ -114,6 +114,7 @@ CREATE TABLE Usuario (
     email VARCHAR(200) NOT NULL UNIQUE,
     idade INT NOT NULL,
     senha VARCHAR(20) NOT NULL
+    foto_perfil VARCHAR(255) DEFAULT 'default.jpg'
 );
 
 CREATE TABLE Sensor (

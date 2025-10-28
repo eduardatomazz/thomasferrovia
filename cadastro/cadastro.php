@@ -50,20 +50,47 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
 
 
         <div class="azul">
-            <div class="inf_azul">
+            <div class="inf_azull">
                 <form method="post">
-                    <h2>Bem-vindo <?php= $_SESSION["username"] ?>!</h2>
+                    <div>
+            <br>
+        <img src="../img/default.jpg ?>" alt="Foto de Perfil" style="width: 93px; height: 90px; border-radius:50%;">
+        <br>
+        <br>
+            <a href="upload_foto.php" class="trocarfoto"> Trocar Foto de Perfil</a>
+            <br>
+        <div>
+        
                     <h3>Cadastro Novo Usuário</h3>
-                    <?php if($register_msg):  ?> <p> <?php= $register_msg ?> </p> <?php endif; ?>
-                    <input class="input" type="text" name="new_nome" placeholder="Nome" required> 
-                    <br>
-                    <input class="input" type="text" name="new_username" placeholder="Novo Usuário" required> 
-                    <br>
-                    <input class="input" type="password" name="new_password" placeholder="Nova Senha" required>
-                    <input class="input" type="text" name="new_email" placeholder="E-mail" required> 
-                    <br>
-                    <input class="input" type="text" name="new_idade" placeholder="Idade" required> 
-                    <br>
+                    <div class="flex">
+                        <div>
+                            <?php if($register_msg):  ?> <p> <?php echo $register_msg; ?> </p> <?php endif; ?>
+                            <input class="inputt" type="text" name="new_nome" placeholder="Nome" required> 
+                            <br>
+                            <input class="inputt" type="text" name="new_username" placeholder="Novo Usuário" required> 
+                            <br>
+                            <input class="inputt" type="password" name="new_password" placeholder="Nova Senha" required>
+                            <input class="inputt" type="text" name="new_email" placeholder="E-mail" required> 
+                            <br>
+                            <input class="inputt" type="text" name="new_idade" placeholder="Idade" required> 
+                            <br>
+                        </div>
+                        <div>
+                            <input class="inputt" type="text" name="new_CEP" placeholder="CEP" required> 
+                            <br>
+                            <input class="inputt" type="text" name="new_estado" placeholder="Estado" required> 
+                            <br>
+                            <input class="inputt" type="text" name="new_cidade" placeholder="Cidade" required> 
+                            <br>
+                            <input class="inputt" type="text" name="new_bairro" placeholder="Bairro" required> 
+                            <br>
+                            <input class="inputt" type="text" name="new_rua" placeholder="Rua" required> 
+                            <br>
+                            <input class="inputt" type="text" name="new_numero" placeholder="Numero" required> 
+                            <br>
+                        </div>
+                    </div>
+                    
                     <select class="botao3" name="new_func">
                         <option value="1">ADM</option>
                         <option value="0" selected>FUNC</option>
