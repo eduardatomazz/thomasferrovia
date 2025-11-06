@@ -108,6 +108,7 @@
    <header>
     <div id="navbar">
       <img id="icon" src="../img/logo_cabecalho.png" alt="">
+
     </div>
     <div id="menuLateral" class="menu-lateral">
       <button class="fechar-btn" onclick="fecharMenu()">X</button>
@@ -122,6 +123,8 @@
         <li><a href="../index.php">SAIR</a></li>
       </ul>
     </div>
+    
+    <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()">☰</button>
 
   <div class="parteLaranja">
     <h5>RELATÓRIO E ANÁLISE</h5>
