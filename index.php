@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomas_ferrovia</title>
+    <title>Thomas Ferrovia</title>
     <link rel ="stylesheet" href="style.css">
     <script src="../php/script.php"> </script>
     <script src="../php/eqmanutencao.php"> </script>
