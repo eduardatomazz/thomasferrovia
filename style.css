@@ -11,6 +11,10 @@
     background-color: #032552;
 }
 
+#backBtn{
+  padding: 10px;
+}
+
 #comfundo {
     background-color: rgb(58, 115, 186);
     background-image: url(../img/fundo.png);
