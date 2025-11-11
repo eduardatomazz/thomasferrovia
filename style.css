@@ -11,8 +11,13 @@
     background-color: #032552;
 }
 
-#backBtn{
-  padding: 10px;
+#seta_sair{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+  width: 20px;
+  height: 20px;
 }
 
 #comfundo {

@@ -22,6 +22,7 @@ require_once (__DIR__. '/../partials/header.php');
         <li><a href="../public/monitoramento.php">MONITORAMENTO</a></li>
         <li><a href="../public/relatorioeanalise.php">RELATÓRIO E ANÁLISE</a></li>
         <li><a href="../public/alertaenotificacoes.php">ALERTAS E NOTIFICAÇÕES</a></li>
+        <li><a href="../cadastro/cadastro.php">CADASTRAR NOVOS USUÁRIOS</a></li>
         <li><a href="../index.php">SAIR</a></li>
       </ul>
     </div>

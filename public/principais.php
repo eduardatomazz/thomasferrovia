@@ -8,7 +8,9 @@ require_once (__DIR__. '/../partials/header.php');
 <body>
     <header>
         <div id="navbar">
-            <button id="backBtn"><</button>
+            <button type="submit" class="seta_sair">
+             <a href="dashboard.php" ><</a>
+            </button>
             <img id="icon" src="../img/logo_cabecalho.png" alt="">
         </div>
         <div class="cor">
