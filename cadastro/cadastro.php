@@ -72,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
         <img src="../img/default.jpg ?>" alt="Foto de Perfil" style="width: 93px; height: 90px; border-radius:50%;">
         <br>
         <br>
-            <a href="upload_foto.php" class="trocarfoto"> Trocar Foto de Perfil</a>
+            <a href="../public/upload_foto.php" class="trocarfoto"> Trocar Foto de Perfil</a>
             <br>
         <div>
         

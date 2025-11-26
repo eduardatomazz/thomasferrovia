@@ -1,6 +1,9 @@
 <?php
 
+
+
 class User {
+
     private $conn;
 
     public function __construct($db){
@@ -9,7 +12,7 @@ class User {
 
     public function register($username, $email, $password){
         $hash = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO usuarios (nome, email, senha) VALUES (:username , :email, :password)";
+        $sql = "INSERT INTO usuario (nome, email, senha) VALUES (:username , :email, :password)";
         $stmt = $this -> conn->prepare($sql);
         $stmt ->bindParam(':username', $username);
         $stmt ->bindParam(':email', $email);
@@ -18,7 +21,7 @@ class User {
     }
 
     public function login($email,$password){
-        $sql = "SELECT * FROM usuarios WHERE email = :email";
+        $sql = "SELECT * FROM usuario WHERE email = :email";
         $stmt = $this -> conn->prepare($sql);
         $stmt ->bindParam(':email', $email);
         $stmt ->execute();
@@ -31,7 +34,7 @@ class User {
     }
 
     public function getUserById($userId){
-        $sql = "SELECT * FROM usuarios WHERE id = :id";
+        $sql = "SELECT * FROM usuario WHERE id_usuario = :id";
         $stmt = $this -> conn->prepare($sql);
         $stmt ->bindParam(':id', $userId);
         $stmt ->execute();
@@ -39,10 +42,10 @@ class User {
     }
 
     public function updateProfilePic($userId,$profilePic){
-        $sql = "UPDATE usuarios SET foto_perfil = :profile_pic WHERE id = :id";
+        $sql = "UPDATE usuario SET foto_perfil = ? WHERE id_usuario = ?";
         $stmt = $this -> conn->prepare($sql);
-        $stmt ->bindParam(':profile_pic', $profilePic);
-        $stmt ->bindParam(':id', $userId);
+        $stmt ->bindParkam('si', $profilePic,$userId);
+        // $stmt ->bindParam(':user', $userId);
         return $stmt -> execute();
     }
 

@@ -3,7 +3,7 @@
 
 require_once (__DIR__. '/../partials/header.php');
 
-
+session_start();
 
 ?>
 

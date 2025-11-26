@@ -1,20 +1,25 @@
 <?php
 
-include "../includes/db_connect.php";
+include("../config/db.php");
+include "../src/User.php";
 
 
 session_start();
 
-if (!isset($_SESSION['user_id'])) {
+echo $_SESSION["id_usuario"];
+
+if (!isset($_SESSION['id_usuario'])) {
     header("Location: login.php");
     exit();
 }
 
-$user = new User($conn);
-$currentUser = $user -> getUserById($_SESSION['user_id']);
+$user = new User($mysqli);
+//echo "User: " . $user;
+$currentUser = $_SESSION['id_usuario'];
+//echo "currentUser: " . $currentUser;
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_perfil"])){
-    $target_dir = "../uploads/";
+    $target_dir = "../img/";
     $target_file = $target_dir . basename($_FILES["foto_perfil"]["name"]);
     $uploadOk = 1;
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -42,7 +47,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_perfil"])){
     }else{
         if(move_uploaded_file($_FILES["foto_perfil"]["tmp_name"], $target_file)){
             $user -> updateProfilePic($_SESSION['user_id'], basename($_FILES['foto_perfil']["name"]));
-            header("Location: dashboard.php");
+            header("Location: ../cadastro/cadastro.php");
 
         }else{
             echo "Desculpa houve algum erro no envio.";
