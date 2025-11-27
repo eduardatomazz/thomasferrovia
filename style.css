@@ -403,6 +403,8 @@
 .card.notificacao {
   background-color: #d97706;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .iconee {

@@ -1,12 +1,7 @@
 <?php
-
-include("../config/db.php");
-include "../src/User.php";
-
-
+include("../config/db2.php");
+include("../src/User.php");
 session_start();
-
-echo $_SESSION["id_usuario"];
 
 if (!isset($_SESSION['id_usuario'])) {
     header("Location: login.php");
@@ -14,54 +9,58 @@ if (!isset($_SESSION['id_usuario'])) {
 }
 
 $user = new User($mysqli);
-//echo "User: " . $user;
-$currentUser = $_SESSION['id_usuario'];
-//echo "currentUser: " . $currentUser;
+$id_usuario = $_SESSION['id_usuario'];
 
-if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_perfil"])){
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['foto_perfil'])) {
+
+    // Pasta onde as imagens serão salvas
     $target_dir = "../img/";
-    $target_file = $target_dir . basename($_FILES["foto_perfil"]["name"]);
-    $uploadOk = 1;
+
+    // Nome do arquivo original
+    $nome_original = basename($_FILES["foto_perfil"]["name"]);
+
+    // Gera nome único
+    $novo_nome = uniqid() . "_" . $nome_original;
+
+    // Caminho final
+    $target_file = $target_dir . $novo_nome;
+
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
+    // Verifica se é imagem
     $check = getimagesize($_FILES["foto_perfil"]["tmp_name"]);
-    if ($check !== false){
-        $uploadOK = 1;
-    }else{
-        echo "O arquivo não é uma imagem.";
-        $uploadOK = 0;
+    if ($check === false) {
+        die("O arquivo não é uma imagem.");
     }
 
-    if($_FILES["foto_perfil"]["size"] > 500000){
-        echo " Imagem muito pesada para o sistema. ";
-        $uploadOk = 0;
+    // Tamanho máximo
+    if ($_FILES["foto_perfil"]["size"] > 500000) {
+        die("Imagem muito pesada.");
     }
 
-    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"){
-        echo(" Desculpe, só aceitamos JPG, JPEG e PNG. ");
-        $uploadOk = 0;
+    // Permitir apenas certos formatos
+    if ($imageFileType != "jpg" && $imageFileType != "jpeg" && $imageFileType != "png") {
+        die("Apenas JPG, JPEG e PNG são permitidos.");
     }
 
-    if ($uploadOk == 0){
-        echo "Desculpe seu arquivo não foi enviado.";
-    }else{
-        if(move_uploaded_file($_FILES["foto_perfil"]["tmp_name"], $target_file)){
-            $user -> updateProfilePic($_SESSION['user_id'], basename($_FILES['foto_perfil']["name"]));
+    // Tenta mover a imagem
+    if (move_uploaded_file($_FILES["foto_perfil"]["tmp_name"], $target_file)) {
+
+        // Atualiza imagem no banco
+        $sql = "UPDATE Usuario SET foto_perfil = '$novo_nome' WHERE id_usuario = $id_usuario";
+
+        if ($mysqli->query($sql) === TRUE) {
             header("Location: ../cadastro/cadastro.php");
-
-        }else{
-            echo "Desculpa houve algum erro no envio.";
+            exit();
+        } else {
+            echo "Erro no banco: " . $mysqli->error;
         }
+
+    } else {
+        echo "Erro ao enviar o arquivo.";
     }
-
-
 }
-
-
 ?>
-
-
-
 
 <html lang="en">
 <head>
@@ -72,15 +71,12 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES["foto_perfil"])){
 </head>
 
 <body>
-    
     <form action="upload_foto.php" method="POST" enctype="multipart/form-data">
-
         <h2>Upload de Foto:</h2>
         <input type="file" name="foto_perfil" required>
         <button type="submit">Upload</button>
-
         <br>
         <a href="index.php">Home</a>
     </form>
-
 </body>
+</html>
