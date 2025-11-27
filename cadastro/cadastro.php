@@ -90,19 +90,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
                             <input class="inputt" type="text" name="new_idade" placeholder="Idade" required> 
                             <br>
                         </div>
-                        <div>
-                            <input class="inputt" type="text" name="new_CEP" placeholder="CEP" required> 
-                            <button type="submit" onclick="consultaCEP()" >Buscar</button>
-                            <br>
-                            <input class="inputt" type="text" name="endereco" placeholder="Endereço" required> 
-                            <br>
-                            <input class="inputt" type="text" name="bairro" placeholder="Bairro" required> 
-                            <br>
-                            <input class="inputt" type="text" name="cidade" placeholder="Cidade" required> 
-                            <br>
-                            <input class="inputt" type="text" name="uf" placeholder="UF" required> 
-                            <br>
-                        </div>
+                        
                     </div>
                     
                     <select class="botao3" name="new_func">
@@ -115,21 +103,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])){
                 
             </div>
         </div>
-        <script>
-            fuction consultaCEP(){
-                let cep = document.getElementById('cep').value
-                let url = 'viacep.com.br/ws/' + cep + '/json/'
-                fetch(url)
-                    .then(Response => response.json() )
-                    .then(data => {
-                        document.getElementById('endereco').value = data.logradouro
-                        document.getElementById('bairro').value = data.bairro
-                        document.getElementById('cidade').value = data.localidade
-                        document.getElementById('uf').value = data.uf
-                    })
-                    .catch(error => console.error(error))
-            }
-        </script>
+       
     </body>
     
 </body>
