@@ -1,4 +1,5 @@
 <?php
+
 include "../config/db.php";
 session_start();
 
@@ -57,8 +58,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])) {
 
 <header>
     <div id="navbar">
-        <!-- Foto dinâmica do usuário logado -->
-        <img id="icon" src="<?= $foto ?>" alt="Foto de Perfil" style="width:50px; height:50px; border-radius:50%;">
+            <img id="icon" src="../img/logo_cabecalho.png" alt="">
+        </div>
     </div>
     <div class="cor"></div>
     <div id="menuLateral" class="menu-lateral">
@@ -83,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])) {
             <form method="post">
                 <div>
                     <br>
-                    <img src="<?= $foto ?>" alt="Foto de Perfil" style="width:93px; height:90px; border-radius:50%;">
+                    <img src="<?= $foto ?>" alt="Foto de Perfil" style="width:100px; height:100px; border-radius:50%;">
                     <br><br>
                     <a href="../public/upload_foto.php" class="trocarfoto">Trocar Foto de Perfil</a>
                     <br><br>

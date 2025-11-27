@@ -1,5 +1,6 @@
 <?php
-include("../config/db2.php");
+
+
 include("../src/User.php");
 session_start();
 
@@ -61,22 +62,50 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['foto_perfil'])) {
     }
 }
 ?>
-
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload de Foto de Perfil</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Cadastro de Novo Usuário</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
+<body id="comfundo">
+
+<header>
+    <div id="navbar">
+            <img id="icon" src="../img/logo_cabecalho.png" alt="">
+        </div>
+    </div>
+    <div class="cor"></div>
+    <div id="menuLateral" class="menu-lateral">
+        <button class="fechar-btn" onclick="fecharMenu()">X</button>
+        <ul>
+            <li><a href="../public/inicioadm.php">INÍCIO</a></li>
+            <li><a href="../public/dashboard.php">DASHBOARD</a></li>
+            <li><a href="../public/rotas.php">ROTAS</a></li>
+            <li><a href="../public/monitoramento.php">MONITORAMENTO</a></li>
+            <li><a href="../public/relatorioeanalise.php">RELATÓRIO E ANÁLISE</a></li>
+            <li><a href="../public/alertaenotificacoes.php">ALERTAS E NOTIFICAÇÕES</a></li>
+            <li><a href="../cadastro/cadastro.php">CADASTRAR NOVOS USUÁRIOS</a></li>
+            <li><a href="../index.php">SAIR</a></li>
+        </ul>
+    </div>
+    <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()">☰</button>
+</header>
 
 <body>
     <form action="upload_foto.php" method="POST" enctype="multipart/form-data">
-        <h2>Upload de Foto:</h2>
+        <div class="azull">
+<h3>Upload de Foto:</h3>
+<p>
         <input type="file" name="foto_perfil" required>
+
         <button type="submit">Upload</button>
+
         <br>
-        <a href="index.php">Home</a>
+        <p><a href="../cadastro/cadastro.php">Voltar</a></p>
+        </div>
     </form>
 </body>
 </html>

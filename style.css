@@ -207,6 +207,12 @@
     height: calc(85vh - 150px);
 }
 
+.azull {
+    align-items: center;
+    margin: 20px;
+    border-color: #002855;
+}
+
 
 .inf_azull {
     background-color: #023880;
@@ -223,9 +229,9 @@
     color: white;
     text-align: center;
     width: 300px;
-    height: 600px;
+    height: 700px;
     padding: 40px; 
-    margin-top: 80px;
+    margin-top: 170px;
 }
 
 .inf_azul {
@@ -248,7 +254,9 @@
 }
 
 .trocarfoto{
-  font-size: 15px;
+  font-size: 14px;
+text-decoration: underline;
+  color: #b8d7fa;
 }
 
 /* .inf_azul2 {
@@ -500,7 +508,7 @@ input {
 
 .inputt {
     resize: none;
-    width: 170px;
+    width: 300px;
     height: 30px;
     background-color: rgba(240, 248, 255, 0);
     border-color: #ffffff;
@@ -1158,6 +1166,9 @@ h3{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     justify-content: center;
 }
+      
+
+
 .destino{
     background-color: #d17f21;
     align-items: center;
