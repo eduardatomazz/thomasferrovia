@@ -23,7 +23,7 @@ require_once (__DIR__. '/../partials/header.php');
             <input type="email" id="email" placeholder="Digite seu e-mail" required />
             <a href="codigo.php" class="botao3">ENVIAR</a>
           </form>
-          <a href="../public/login.php" class="login-link">Fazer login</a>
+          <a href="../public/entrar.php" class="login-link">Fazer login</a>
         </div>
       </div>
     </div>
