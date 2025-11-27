@@ -29,7 +29,7 @@ require_once (__DIR__. '/../partials/header.php');
                             <br>
                             <input type="password" id="senha" name="senha">
                         </div>
-                        <a href="../public/login.php" class="botao3">CONFIRMAR</a>
+                        <a href="../public/entrar.php" class="botao3">CONFIRMAR</a>
                     </div>
                 </div>
             </section>
