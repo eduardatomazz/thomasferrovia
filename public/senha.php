@@ -13,7 +13,7 @@ require_once (__DIR__. '/../partials/header.php');
     <img id="icon" src="../img/logo_cabecalho.png" alt="">
   </div>
   <div class="azul">
-    <div class="inf_azul">
+ 
       <div class="esqueceu">
         <div class="senha">
           <h2>ESQUECEU A SENHA?</h2>
@@ -23,10 +23,10 @@ require_once (__DIR__. '/../partials/header.php');
             <input type="email" id="email" placeholder="Digite seu e-mail" required />
             <a href="codigo.php" class="botao3">ENVIAR</a>
           </form>
-          <a href="../public/login.php" class="login-link">Fazer login</a>
+          <a href="../public/entrar.php" class="login-link">Fazer login</a>
         </div>
       </div>
-    </div>
+    
   </div>
 </body>
 </html>
