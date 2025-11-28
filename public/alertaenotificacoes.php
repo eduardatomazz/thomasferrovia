@@ -28,14 +28,15 @@ require_once (__DIR__. '/../partials/header.php');
     
     <button id="abrirMenu" class="abrir-btn" onclick="abrirMenu()">☰</button>
     </header>
-                <section>
+    <div>
+        
                     <a href="../public/principais.php" class="botao22">PRINCIPAIS</a>
-                </section>
+            
                 
-                <section>
+            
                     <a href="../public/acaoimediata.php" class="botao23">AÇÃO IMEDIATA</a>
-                </section>
-           
+                
+           </div>
         <script src="../scripts/script.php"></script>
     </body>
 </body>

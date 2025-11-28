@@ -32,10 +32,10 @@ require_once (__DIR__. '/../partials/header.php');
     </header>
     <main id="monitoramento">
         
-        <button class="alerta manutencao" onclick="mostrarDetalhes('manutencao');" target="_blank" type="button">
+        <div class="cardalerta" onclick="mostrarDetalhes('manutencao');" target="_blank" type="button">
         <h2>ALERTA PARA MANUTENÇÃO!</h2> 
         <p>Manutenção no óleo do trem 571</p>
-        </button>
+</div>
     
         <div class="card notificacao">
       <div class="texto">

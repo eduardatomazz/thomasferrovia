@@ -402,12 +402,15 @@ text-decoration: underline;
   color: white;
 }
 
-.card.alertaa {
-  background-color: #991b1b;
-  margin-top:20px;
 
+
+.cardalerta {
+ background-color: #991b1b;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
 }
-
 .card.notificacao {
   background-color: #d97706;
   margin-top: 20px;
