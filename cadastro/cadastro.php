@@ -30,8 +30,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['register'])) {
     $new_idade = $_POST['new_idade'] ?? "";
 
     if ($new_user && $new_pass && $new_nome && $new_email && $new_idade !== "") {
-        $stmt = $mysqli->prepare("INSERT INTO Usuario (nome, usuario, email, senha, adm, idade) VALUES (?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssii", $new_nome, $new_user, $new_email, $new_pass, $new_func, $new_idade);
+        $stmt = $mysqli->prepare("INSERT INTO Usuario (nome, usuario, email, senha, idade) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssi", $new_nome, $new_user, $new_email, $new_pass, $new_idade);
 
         if ($stmt->execute()) {
             $register_msg = "Usuário cadastrado com sucesso!";
