@@ -18,7 +18,7 @@ require_once (__DIR__. '/../partials/header.php');
     </header>
     
   <div class="containeer">
-    <div class="card alertaa">
+    <div class="cardalerta">
       <img class="atencao" src="../img/atencao.webp" alt="">
       <div class="texto">
         <h3>Alerta extremo</h3>
@@ -26,7 +26,7 @@ require_once (__DIR__. '/../partials/header.php');
       </div>
     </div>
 
-    <div class="card alertaa">
+    <div class="cardalerta">
       <img class="atencao" src="../img/atencao.webp" alt="">
       <div class="texto">
         <h3>Alerta extremo</h3>
@@ -34,7 +34,7 @@ require_once (__DIR__. '/../partials/header.php');
       </div>
     </div>
 
-    <div class="card alertaa">
+    <div class="cardalerta">
       <img class="atencao" src="../img/atencao.webp" alt="">
       <div class="texto">
         <h3>Alerta extremo</h3>
